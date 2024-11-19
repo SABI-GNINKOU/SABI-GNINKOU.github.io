@@ -8,175 +8,116 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
             display: flex;
-            flex-direction: column;
-            min-height: 100vh;
         }
-        header {
+        /* Sidebar */
+        .sidebar {
+            width: 250px;
             background-color: #004080;
             color: white;
-            padding: 20px;
-            text-align: center;
+            position: fixed;
+            height: 100%;
+            padding-top: 20px;
         }
-        .container {
-            display: flex;
-            flex: 1;
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 0 10px;
-        }
-        /* Sidebar gauche */
-        .sidebar {
-            width: 30%;
-            padding: 20px;
-            background-color: #e9ecef;
-            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-        }
-        .profile-photo {
-            width: 100%;
-            max-width: 150px;
-            height: auto;
-            border-radius: 50%;
-            margin: 0 auto;
-            display: block;
-        }
-        .sidebar h2 {
-            color: #004080;
-            font-size: 1.2em;
-            margin-top: 15px;
-            text-align: center;
-        }
-        .contact-info {
-            margin-top: 10px;
-            text-align: center;
-        }
-        .link {
-            color: #004080;
+        .sidebar a {
+            color: white;
             text-decoration: none;
+            display: block;
+            padding: 15px;
+            transition: background 0.3s;
         }
-        .link:hover {
-            text-decoration: underline;
+        .sidebar a:hover {
+            background-color: #0059b3;
         }
-        /* Contenu principal */
+        /* Main content */
         .main-content {
-            width: 70%;
+            margin-left: 250px;
             padding: 20px;
-            margin-left: 20px;
+            max-width: 800px;
         }
-        .main-content section {
-            margin-bottom: 20px;
-        }
-        .main-content h2 {
-            color: #004080;
-            font-size: 1.5em;
-            margin-bottom: 10px;
+        .section {
+            margin-bottom: 40px;
+            padding-top: 60px;
         }
         footer {
             background-color: #004080;
             color: white;
             text-align: center;
             padding: 10px;
-            margin-top: auto;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Razak Christophe Sabi Gninkou</h1>
-    <p> PhD Candidate in Applied Mathematics with a specialization in Machine Learning at Université Polytechnique Hauts-de-France and Ecole des Mines de Saint-Etienne (EMSE)</p>
-</header>
+<div class="sidebar">
+    <h2 style="text-align: center;">Razak Sabi Gninkou</h2>
+    <a href="#about">À propos</a>
+    <a href="#phd-info">Thèse</a>
+    <a href="#academic-background">Parcours académique</a>
+    <a href="#research-experience">Expérience de recherche</a>
+    <a href="#research">Centres de recherche</a>
+    <a href="#outside-interests">Intérêts</a>
+    <a href="#contact">Contact</a>
+</div>
 
-<div class="container">
-    <!-- Sidebar gauche -->
-    <aside class="sidebar">
-        <img src="SABI_GNINKOU_Razak_HD.png" alt="Razak Sabi Gninkou's photo" class="profile-photo">
+<div class="main-content">
+    <section id="about" class="section">
+        <h2>À propos</h2>
+        <p>Mon projet se situe à l'intersection des mathématiques appliquées et du machine learning...</p>
+    </section>
+
+    <section id="phd-info" class="section">
+        <h2>Thèse de doctorat</h2>
+        <p><strong>Sujet :</strong> Modélisation de processus gaussiens...</p>
+    </section>
+
+    <section id="academic-background" class="section">
+        <h2>Parcours académique</h2>
+        <p>Master en Statistiques et Machine Learning à la Sorbonne...</p>
+    </section>
+
+    <section id="research-experience" class="section">
+        <h2>Expérience de recherche</h2>
+        <p>Stage de recherche de six mois chez EDF...</p>
+    </section>
+
+    <section id="research" class="section">
+        <h2>Centres de recherche</h2>
+        <ul>
+            <li>Modélisation probabiliste des champs aléatoires...</li>
+            <li>Simulation et identification structurelle...</li>
+        </ul>
+    </section>
+
+    <section id="outside-interests" class="section">
+        <h2>Intérêts en dehors de l'académie</h2>
+        <p>J'apprécie les activités de plein air, en particulier le football et le volleyball...</p>
+    </section>
+
+    <section id="contact" class="section">
         <h2>Contact</h2>
-        <div class="contact-info">
-            <p>Email: <a href="mailto:razsabigninchrist@gmail.com" class="link">razsabigninchrist@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://bj.linkedin.com/in/razak-christophe-sabi-gninkou-b12047251" class="link">linkedin.com/in/razak-christophe-sabi-gninkou</a></p>
-            <p>GitHub: <a href="https://github.com/SABI-GNINKOU" class="link">github.com/SABI-GNINKOU</a></p>
-        </div>
-    </aside>
-
-    <!-- Contenu principal -->
-    <main class="main-content">
-        <!-- About Me -->
-        <section id="about">
-            <h2>About Me</h2>
-            <p> My project is at the intersection of applied mathematics and machine learning, with the objective of developing advanced probabilistic and algorithmic methods for modeling complex mechanical systems.</p>
-        </section>
-
-        <!-- PhD Thesis Information -->
-        <section id="phd-info">
-    <h2>PhD Thesis Information</h2>
-    <p><strong>Topic:</strong> Gaussian process modeling of mechanical random fields: a complete study from simulation to identification</p>
-    <p><strong>Supervisors:</strong> 
-        <a href="https://www.uphf.fr/ceramaths/membres/boubacarmainassara_yacouba" class="link" target="_blank">Yacouba Boubacar Maïnassara</a>, 
-        <a href="https://www.emse.fr/~leriche/" class="link" target="_blank">Rodolphe Le Riche</a>, 
-        <a href="https://anfelopera.github.io/" class="link" target="_blank">Andres Lopez-Lopera</a>, 
-        <a href="https://www.uphf.fr/lamih/membres/massa_franck" class="link" target="_blank">Franck Massa</a>, 
-        <a href="https://www.uphf.fr/ceramaths/membres/reding_lucas" class="link" target="_blank">Lucas Reding</a>
-    </p>
-    <p><strong>Funding:</strong> <a href="https://anfelopera.github.io/funding/GAME/" class="link" target="_blank">ANR JCJC GAME</a></p
-   <p><strong> Institution:</strong> <a href="https://www.uphf.fr/" class="link" target="_blank">Université Polytechnique Hauts-de-France (UPHF)</a> - <a href="https://www.uphf.fr/ceramaths/en" class="link" target="_blank">Céramaths Laboratory</a>
-       , <a href="https://www.mines-stetienne.fr/" class="link" target="_blank">École des Mines de Saint-Étienne (EMSE)</a>
-           
-</section>
-        
-
-        <!-- Academic Background -->
-<section id="academic-background">
-    <h2>Academic Background</h2>
-    <p><strong>Master's  in Statistics and Machine Learning</strong> - <a href="https://www.sorbonne-universite.fr/" class="link" target="_blank">Sorbonne University</a> (2023-2024)</p>
-    <p>This Master’s program in mathematical statistics, machine learning, and data science is hosted by Sorbonne University at the <a href="https://www.lpsm.paris/" class="link" target="_blank">Laboratoire de Probabilités, Statistique et Modélisation (LPSM)</a>. I was awarded the <a href="https://sciencesmaths-paris.fr/pgsm-master" class="link" target="_blank">PGSM scholarship</a> from the Paris Graduate School of Mathematics (FSMP), which provided funding and support throughout the program. </p>
-<p><strong>Master’s in Statistics-Probability</strong> - <a href="http://www.imsp-benin.com/" class="link" target="_blank">Institut des Mathématiques et des Sciences Physiques (IMSP)</a>, Benin (2021-2023)</p>
-    <p>This research-oriented Master’s program aims to train high-level specialists in statistical and probabilistic techniques for solving socio-economic and applied science problems. Graduates are prepared to tackle scientific research challenges in statistics and probability, meeting the ever-growing number of applications in these fields. I was also a <a href="https://www.ceasma-benin.org/htdocs/mediatheques/?page=videotheques&video=39144da5a6180c47885443c83547ec14" class="link" target="_blank">scholarship recipient</a> from CEASMA, which supported my studies during this program. </p> 
-    
-    <p><strong>Bachelor’s in Mathematics, Computer Science, and Applications</strong> - <a href="https://sigunstim.org/" class="link" target="_blank">Université Nationale des Sciences, Technologies, Ingénieries et Mathématiques (UNSTIM)</a>, Benin (2017-2020)</p>
-    <p>Developed foundational skills in programming (C++, Python) and statistics, with a particular interest in probability theory, statistics, dynamical systems, and numerical optimization.</p>
-</section>
-    
-
-        <!-- Research Experience -->
-        <section id="research-experience">
-    <h2>Research Experience</h2>
-    
-    <!-- Internship at EDF -->
-    <p><strong>Six-month academic internship</strong> - <a href="https://www.edf.fr/" class="link" target="_blank">EDF Systems Department</a>, Paris Saclay (April 2024 - October 2024)</p>
-    <p>Focused on "Bayesian inference for estimating reliability parameters of electrical equipment" using MCMC methods to estimate Weibull model parameters with censored data. Developed Python algorithms for automating analyses and authored detailed reports, enhancing expertise in Bayesian methods and stochastic modeling within an industrial context.</p>
-    
-    <!-- Internship on Time Series Analysis -->
-    <p><strong>Research Internship in Time Series Analysis</strong> - <a href="http://www.imsp-benin.com/" class="link" target="_blank">Institut des Mathématiques et des Sciences Physiques (IMSP)</a>, Benin (April 2023 - August 2023)</p>
-    <p>Conducted an in-depth study of integer-valued time series with periodicity and heteroscedasticity. This work involved the development and application of statistical models to handle complex data structures with non-constant variance, aiming to improve forecasting accuracy in socio-economic contexts. Strengthened proficiency in time series analysis, with a focus on identifying patterns and addressing challenges related to seasonality and heterogeneity in data.</p>
-</section>
-        <!-- Research Interests -->
-       <section id="research">
-    <h2>Research Interests</h2>
-    <ul>
-        <li><strong>Probabilistic modeling of mechanical random fields</strong> using Gaussian processes to capture uncertainties in complex systems.</li>
-        <li><strong>Simulation and structural identification</strong> of complex mechanical systems, with an emphasis on robust and interpretable models.</li>
-        <li><strong>Bayesian inference and MCMC methods</strong> for parameter estimation and uncertainty quantification, particularly in reliability and industrial applications.</li>
-        <li><strong>Machine learning and deep learning</strong> techniques applied to industrial challenges, focusing on predictive maintenance and anomaly detection.</li>
-        <li><strong>Advanced inference techniques</strong>, including variational inference, for scalable and efficient learning in high-dimensional, data-intensive applications.</li>
-    </ul>
-</section>
-
-
-        <!-- Interests Outside of Academia -->
-        <section id="outside-interests">
-            <h2>Interests Outside of Academia</h2>
-            <p>I enjoy outdoor activities, especially football and volleyball, which help me develop discipline and resilience. Additionally, I am actively involved in social engagement and advocacy, focusing on equal opportunities and inclusion, which enhances my leadership and teamwork skills.</p>
-        </section>
-    </main>
+        <p>Email : <a href="mailto:razsabigninchrist@gmail.com">razsabigninchrist@gmail.com</a></p>
+        <p>LinkedIn : <a href="https://linkedin.com/in/razak-christophe-sabi-gninkou">linkedin.com/in/razak-christophe-sabi-gninkou</a></p>
+    </section>
 </div>
 
 <footer>
-    <p>&copy; 2024 Razak Christophe Sabi Gninkou - All rights reserved</p>
+    <p>&copy; 2024 Razak Christophe Sabi Gninkou</p>
 </footer>
+
+<script>
+    document.querySelectorAll('.sidebar a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
 
 </body>
 </html>
