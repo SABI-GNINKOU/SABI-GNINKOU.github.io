@@ -5,62 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Razak Christophe SABI GNINKOU - PhD Candidate</title>
     <style>
+        /* General Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
             display: flex;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #002060;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
         }
         .sidebar {
             width: 250px;
-            background-color: #004080;
-            color: white;
+            background-color: #002060;
+            color: #ffffff;
             position: fixed;
             height: 100%;
             padding-top: 20px;
         }
         .sidebar a {
-            color: white;
-            text-decoration: none;
             display: block;
+            color: #ffffff;
+            text-decoration: none;
             padding: 15px;
-            transition: background 0.3s;
+            font-size: 14px;
         }
         .sidebar a:hover {
-            background-color: #0059b3;
+            background-color: #0051a3;
         }
-        .content {
+        .container {
+            display: flex;
+            flex-direction: row;
+            overflow-x: auto;
+            width: 100%;
             margin-left: 250px;
-            padding: 20px;
-            flex: 1;
+        }
+        .section {
+            flex: none;
+            width: 100vw;
+            padding: 40px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        footer {
+            background-color: #002060;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
 
+<header>
+    <h1>Razak Christophe Sabi Gninkou</h1>
+    <p>PhD Candidate in Applied Mathematics and Machine Learning at Université Polytechnique Hauts-de-France and EMSE</p>
+</header>
+
 <div class="sidebar">
-    <h2 style="text-align: center;">Razak Sabi Gninkou</h2>
-    <a href="#" onclick="loadContent('about.html')">À propos</a>
-    <a href="#" onclick="loadContent('phd-info.html')">Thèse</a>
-    <a href="#" onclick="loadContent('academic-background.html')">Parcours académique</a>
-    <a href="#" onclick="loadContent('research-experience.html')">Expérience de recherche</a>
-    <a href="#" onclick="loadContent('research.html')">Centres de recherche</a>
-    <a href="#" onclick="loadContent('outside-interests.html')">Intérêts</a>
-    <a href="#" onclick="loadContent('contact.html')">Contact</a>
+    <h2 style="text-align: center;">Navigation</h2>
+    <a href="#" onclick="loadSection('about')">About Me</a>
+    <a href="#" onclick="loadSection('phd-info')">PhD Information</a>
+    <a href="#" onclick="loadSection('academic-background')">Academic Background</a>
+    <a href="#" onclick="loadSection('research-experience')">Research Experience</a>
+    <a href="#" onclick="loadSection('research')">Research Interests</a>
+    <a href="#" onclick="loadSection('outside-interests')">Outside Interests</a>
 </div>
 
-<div class="content" id="main-content">
-    <!-- Contenu chargé dynamiquement ici -->
+<div class="container" id="main-content">
+    <!-- Sections will load here -->
 </div>
 
 <script>
-    function loadContent(page) {
-        fetch(page)
+    const sections = {
+        'about': 'about.html',
+        'phd-info': 'phd-info.html',
+        'academic-background': 'academic-background.html',
+        'research-experience': 'research-experience.html',
+        'research': 'research.html',
+        'outside-interests': 'outside-interests.html'
+    };
+
+    function loadSection(section) {
+        fetch(sections[section])
             .then(response => response.text())
             .then(data => {
-                document.getElementById('main-content').innerHTML = data;
+                document.getElementById('main-content').innerHTML = `<div class="section">${data}</div>`;
             })
-            .catch(error => console.error('Erreur lors du chargement du contenu:', error));
+            .catch(error => console.error('Error loading content:', error));
     }
+
+    // Load default section
+    loadSection('about');
 </script>
+
+<footer>
+    <p>&copy; 2024 Razak Christophe Sabi Gninkou - All rights reserved</p>
+</footer>
 
 </body>
 </html>
