@@ -7,10 +7,8 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
             display: flex;
         }
-        /* Sidebar */
         .sidebar {
             width: 250px;
             background-color: #004080;
@@ -29,24 +27,10 @@
         .sidebar a:hover {
             background-color: #0059b3;
         }
-        /* Main content */
-        .main-content {
+        .content {
             margin-left: 250px;
             padding: 20px;
-            max-width: 800px;
-        }
-        .section {
-            margin-bottom: 40px;
-            padding-top: 60px;
-        }
-        footer {
-            background-color: #004080;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            flex: 1;
         }
     </style>
 </head>
@@ -54,69 +38,28 @@
 
 <div class="sidebar">
     <h2 style="text-align: center;">Razak Sabi Gninkou</h2>
-    <a href="#about">À propos</a>
-    <a href="#phd-info">Thèse</a>
-    <a href="#academic-background">Parcours académique</a>
-    <a href="#research-experience">Expérience de recherche</a>
-    <a href="#research">Centres de recherche</a>
-    <a href="#outside-interests">Intérêts</a>
-    <a href="#contact">Contact</a>
+    <a href="#" onclick="loadContent('about.html')">À propos</a>
+    <a href="#" onclick="loadContent('phd-info.html')">Thèse</a>
+    <a href="#" onclick="loadContent('academic-background.html')">Parcours académique</a>
+    <a href="#" onclick="loadContent('research-experience.html')">Expérience de recherche</a>
+    <a href="#" onclick="loadContent('research.html')">Centres de recherche</a>
+    <a href="#" onclick="loadContent('outside-interests.html')">Intérêts</a>
+    <a href="#" onclick="loadContent('contact.html')">Contact</a>
 </div>
 
-<div class="main-content">
-    <section id="about" class="section">
-        <h2>À propos</h2>
-        <p>Mon projet se situe à l'intersection des mathématiques appliquées et du machine learning...</p>
-    </section>
-
-    <section id="phd-info" class="section">
-        <h2>Thèse de doctorat</h2>
-        <p><strong>Sujet :</strong> Modélisation de processus gaussiens...</p>
-    </section>
-
-    <section id="academic-background" class="section">
-        <h2>Parcours académique</h2>
-        <p>Master en Statistiques et Machine Learning à la Sorbonne...</p>
-    </section>
-
-    <section id="research-experience" class="section">
-        <h2>Expérience de recherche</h2>
-        <p>Stage de recherche de six mois chez EDF...</p>
-    </section>
-
-    <section id="research" class="section">
-        <h2>Centres de recherche</h2>
-        <ul>
-            <li>Modélisation probabiliste des champs aléatoires...</li>
-            <li>Simulation et identification structurelle...</li>
-        </ul>
-    </section>
-
-    <section id="outside-interests" class="section">
-        <h2>Intérêts en dehors de l'académie</h2>
-        <p>J'apprécie les activités de plein air, en particulier le football et le volleyball...</p>
-    </section>
-
-    <section id="contact" class="section">
-        <h2>Contact</h2>
-        <p>Email : <a href="mailto:razsabigninchrist@gmail.com">razsabigninchrist@gmail.com</a></p>
-        <p>LinkedIn : <a href="https://linkedin.com/in/razak-christophe-sabi-gninkou">linkedin.com/in/razak-christophe-sabi-gninkou</a></p>
-    </section>
+<div class="content" id="main-content">
+    <!-- Contenu chargé dynamiquement ici -->
 </div>
-
-<footer>
-    <p>&copy; 2024 Razak Christophe Sabi Gninkou</p>
-</footer>
 
 <script>
-    document.querySelectorAll('.sidebar a').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
+    function loadContent(page) {
+        fetch(page)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('main-content').innerHTML = data;
+            })
+            .catch(error => console.error('Erreur lors du chargement du contenu:', error));
+    }
 </script>
 
 </body>
