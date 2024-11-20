@@ -42,6 +42,15 @@
     display: block;
     margin: 20px auto; /* Centre l'image horizontalement */
 }
+.header img.profile-image {
+    max-width: 200px !important; /* Limite la largeur avec priorité */
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 50%; /* Image ronde */
+    display: block;
+    margin: 20px auto;
+}
+
 .header h1 {
     font-size: 32px;
     color: #333;
