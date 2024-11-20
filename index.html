@@ -11,28 +11,28 @@
     <!-- Navigation bar -->
     <nav class="navbar">
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#cv">CV</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#talks">Talks & Events</a></li>
-            <li><a href="#teaching">Teaching</a></li>
+            <li><a href="#home" onclick="showSection('home')">Home</a></li>
+            <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
+            <li><a href="#cv" onclick="showSection('cv')">CV</a></li>
+            <li><a href="#research" onclick="showSection('research')">Research</a></li>
+            <li><a href="#team" onclick="showSection('team')">Team</a></li>
+            <li><a href="#talks" onclick="showSection('talks')">Talks & Events</a></li>
+            <li><a href="#teaching" onclick="showSection('teaching')">Teaching</a></li>
         </ul>
     </nav>
 
-    <!-- Section Home with header content -->
-    <section id="home">
+    <!-- Home Section -->
+    <section id="home" class="section">
         <header class="header">
-            <img src="SABI_GNINKOU_Razak_HD.png" alt="Image of the building or relevant background">
+            <img src="SABI_GNINKOU_Razak_HD.png" alt="Image of Razak Christophe Sabi Gninkou" class="profile-image">
             <h1>Razak Christophe Sabi Gninkou</h1>
             <p>PhD Candidate in Applied Mathematics and Machine Learning</p>
             <p>Université Polytechnique Hauts-de-France and École des Mines de Saint-Étienne (EMSE)</p>
         </header>
     </section>
 
-    <!-- Other sections can go here, for example Contact -->
-    <section id="contact" class="contact-section">
+    <!-- Contact Section -->
+    <section id="contact" class="section" style="display: none;">
         <h2>Contact</h2>
         <div class="contact-info">
             <div class="contact-item">
@@ -52,6 +52,38 @@
         <p class="email">razsabigninchrist@gmail.com</p>
         <p class="note">(Good things come to those who wait.)</p>
     </section>
+
+    <!-- Other sections follow with display: none initially -->
+    <section id="cv" class="section" style="display: none;">
+        <h2>CV</h2>
+        <p>Content for CV section.</p>
+    </section>
+
+    <section id="research" class="section" style="display: none;">
+        <h2>Research</h2>
+        <p>Content for Research section.</p>
+    </section>
+
+    <!-- Add similar sections for Team, Talks, Teaching, etc., with display: none initially -->
+
+    <script>
+        // JavaScript to show only the selected section
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+        // Show the "home" section by default on load
+        document.addEventListener("DOMContentLoaded", function() {
+            showSection('home');
+        });
+    </script>
 
 </body>
 </html>
