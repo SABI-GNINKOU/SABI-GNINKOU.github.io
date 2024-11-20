@@ -46,51 +46,16 @@ body {
 .section {
     min-width: 100vw; /* Chaque section occupe toute la largeur de la fenêtre */
     padding: 40px;
-    scroll-snap-align: start; /* Alignement au début pour le scroll */
-    text-align: center;
-    border-right: 1px solid #ddd;
-}
-
-.section:last-child {
-    border-right: none;
-}
-
-/* Header */
-.header {
-    margin-bottom: 30px;
-}
-
-.header img {
-    max-width: 150px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-}
-
-/* Titles */
-h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-/* Links */
-a {
-    color: #0051a3;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-/* Conteneur principal des sections */
-.section {
-    min-width: 100vw; /* Chaque section occupe toute la largeur de la fenêtre */
-    padding: 40px;
     scroll-snap-align: start; /* Alignement fluide pour le scroll */
-    text-align: center; /* Texte centré */
+    text-align: center;
     border-right: 1px solid #ddd;
     display: flex; /* Utiliser flex pour centrer le contenu */
     justify-content: center; /* Centrer horizontalement */
     align-items: center; /* Centrer verticalement */
+}
+
+.section:last-child {
+    border-right: none;
 }
 
 /* Contenu à l'intérieur des sections */
@@ -98,6 +63,20 @@ a:hover {
     max-width: 800px; /* Largeur maximale pour limiter le texte */
     margin: 0 auto; /* Centrer le contenu */
     text-align: justify; /* Justifie le texte pour un rendu propre */
+}
+
+/* Header */
+.header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.header img {
+    max-width: 120px; /* Limite la taille de l'image */
+    height: auto;
+    border-radius: 50%; /* Rond pour l'image */
+    margin: 20px auto; /* Centré avec un espace en bas */
+    display: block; /* Permet de centrer l'image */
 }
 
 /* Titres */
@@ -115,14 +94,6 @@ p {
     text-align: justify; /* Justifie le texte */
 }
 
-/* Images */
-.header img {
-    max-width: 150px; /* Limite la taille de l'image */
-    height: auto;
-    border-radius: 50%; /* Rond pour l'image */
-    margin-bottom: 20px;
-}
-
 /* Liens */
 a {
     color: #0051a3; /* Bleu doux pour les liens */
@@ -131,4 +102,17 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Correction pour éviter des duplications */
+.section-content img {
+    max-width: 150px; /* Ajuste les dimensions de l'image */
+    margin: 0 auto;
+    display: block;
 }
