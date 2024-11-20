@@ -35,11 +35,12 @@
     font-family: "Helvetica Neue", Arial, sans-serif;
 }
 .header img.profile-image {
-    max-width: 200px; /* Taille maximale de l'image */
+    max-width: 200px; /* Limite la largeur de l'image */
+    width: 100%;      /* Assure que l'image ne dépasse pas cette largeur */
     height: auto;
     border-radius: 50%; /* Image ronde */
     display: block;
-    margin: 20px auto; /* Centrer l'image */
+    margin: 20px auto; /* Centre l'image horizontalement */
 }
 .header h1 {
     font-size: 32px;
