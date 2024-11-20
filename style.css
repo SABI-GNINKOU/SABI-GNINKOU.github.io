@@ -1,71 +1,51 @@
 /* Général */
 body {
-    font-family: "Georgia", serif; /* Police élégante similaire au site de référence */
-    color: #333; /* Couleur pour un texte sobre */
+    font-family: "Georgia", serif; /* Police élégante */
+    color: #333; /* Couleur neutre */
     line-height: 1.6; /* Espacement vertical entre les lignes */
+    background-color: #fff; /* Fond blanc */
     margin: 0;
     padding: 0;
-    background-color: #fff; /* Couleur de fond blanche */
+    text-align: center; /* Centrage global du contenu */
 }
 
 /* Conteneur principal */
-.main-content {
-    max-width: 800px; /* Largeur maximale pour centrer le contenu */
+.content-center {
+    max-width: 800px; /* Limite la largeur à 800px */
     margin: 0 auto; /* Centrage horizontal */
-    padding: 20px;
+    padding: 20px; /* Espacement interne */
+    text-align: center; /* Texte centré */
 }
 
-/* Titres principaux */
+/* Titres */
 h2 {
     font-size: 24px; /* Taille des titres */
-    font-weight: normal; /* Pas de gras excessif */
-    color: #333; /* Couleur sobre pour les titres */
-    border-top: 1px solid #ccc; /* Ligne fine au-dessus pour délimiter */
-    padding-top: 20px;
+    font-weight: normal;
     margin-bottom: 20px;
-    text-align: left; /* Alignement à gauche */
+    color: #333; /* Couleur sobre */
 }
 
 /* Paragraphes */
 p {
     font-size: 18px; /* Taille des paragraphes */
-    margin-bottom: 20px; /* Espacement entre les paragraphes */
-    text-align: justify; /* Justification pour un alignement propre */
+    margin: 10px 0; /* Espacement entre les paragraphes */
 }
 
-/* Listes */
-ul {
-    list-style-type: disc; /* Points standards pour les listes */
-    margin-left: 20px; /* Espacement à gauche pour les puces */
-}
-
-ul li {
-    font-size: 18px; /* Taille du texte dans les listes */
-    color: #333; /* Couleur sobre pour les éléments */
-    margin-bottom: 10px; /* Espacement entre les éléments */
+/* Image */
+.profile-image {
+    max-width: 150px; /* Limite la largeur à 150px */
+    height: auto; /* Maintient le ratio */
+    border-radius: 50%; /* Rendre l'image circulaire */
+    margin: 20px auto; /* Centrer l'image avec un espace autour */
+    display: block;
 }
 
 /* Liens */
 a {
-    color: #0051a3; /* Couleur bleue pour les liens */
-    text-decoration: none; /* Supprime le soulignement des liens */
+    color: #0051a3; /* Bleu doux */
+    text-decoration: none; /* Pas de soulignement par défaut */
 }
 
 a:hover {
     text-decoration: underline; /* Soulignement au survol */
-}
-
-/* Section PhD Thesis Information */
-#phd-info {
-    margin-top: 40px; /* Espacement au-dessus de la section */
-}
-
-#phd-info p {
-    margin-bottom: 10px; /* Espacement entre les paragraphes */
-}
-
-/* Ligne de séparation entre les sections */
-.section-divider {
-    border-top: 1px solid #ccc;
-    margin: 40px 0;
 }
