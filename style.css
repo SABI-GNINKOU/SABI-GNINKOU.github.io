@@ -1,38 +1,71 @@
-/* Styling for Research Interests Section */
-.research-interests {
-    max-width: 800px;
-    margin: 40px auto; /* Center with space around */
-    text-align: left;
+/* Général */
+body {
+    font-family: "Georgia", serif; /* Police élégante similaire au site de référence */
+    color: #333; /* Couleur pour un texte sobre */
+    line-height: 1.6; /* Espacement vertical entre les lignes */
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Couleur de fond blanche */
 }
 
-.research-interests h2 {
-    font-size: 24px;
-    font-weight: normal; /* Enlève le gras */
-    color: #333;
-    border-top: 1px solid #ddd;
+/* Conteneur principal */
+.main-content {
+    max-width: 800px; /* Largeur maximale pour centrer le contenu */
+    margin: 0 auto; /* Centrage horizontal */
+    padding: 20px;
+}
+
+/* Titres principaux */
+h2 {
+    font-size: 24px; /* Taille des titres */
+    font-weight: normal; /* Pas de gras excessif */
+    color: #333; /* Couleur sobre pour les titres */
+    border-top: 1px solid #ccc; /* Ligne fine au-dessus pour délimiter */
     padding-top: 20px;
     margin-bottom: 20px;
-    text-align: left;
-    font-family: "Georgia", serif;
+    text-align: left; /* Alignement à gauche */
 }
 
-/* Research Interests List Styling */
-.research-list {
-    list-style-type: disc; /* Utilise des puces classiques */
-    padding-left: 20px; /* Espace pour aligner les puces avec le texte */
-    margin: 0;
-    line-height: 1.8; /* Interligne pour aérer */
+/* Paragraphes */
+p {
+    font-size: 18px; /* Taille des paragraphes */
+    margin-bottom: 20px; /* Espacement entre les paragraphes */
+    text-align: justify; /* Justification pour un alignement propre */
 }
 
-.research-list li {
-    font-size: 16px;
-    color: #333;
-    font-weight: normal; /* Enlève le gras */
-    margin-bottom: 10px;
+/* Listes */
+ul {
+    list-style-type: disc; /* Points standards pour les listes */
+    margin-left: 20px; /* Espacement à gauche pour les puces */
 }
 
+ul li {
+    font-size: 18px; /* Taille du texte dans les listes */
+    color: #333; /* Couleur sobre pour les éléments */
+    margin-bottom: 10px; /* Espacement entre les éléments */
+}
 
+/* Liens */
+a {
+    color: #0051a3; /* Couleur bleue pour les liens */
+    text-decoration: none; /* Supprime le soulignement des liens */
+}
 
+a:hover {
+    text-decoration: underline; /* Soulignement au survol */
+}
 
+/* Section PhD Thesis Information */
+#phd-info {
+    margin-top: 40px; /* Espacement au-dessus de la section */
+}
 
+#phd-info p {
+    margin-bottom: 10px; /* Espacement entre les paragraphes */
+}
 
+/* Ligne de séparation entre les sections */
+.section-divider {
+    border-top: 1px solid #ccc;
+    margin: 40px 0;
+}
