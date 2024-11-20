@@ -1,48 +1,76 @@
-/* Conteneur principal des sections */
+/* Global Styles */
+body {
+    font-family: "Georgia", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Horizontal Sections */
+.horizontal-container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
 .section {
-    min-width: 100vw; /* Chaque section occupe toute la largeur de la fenêtre */
+    min-width: 100vw;
     padding: 40px;
-    scroll-snap-align: start; /* Alignement fluide pour le scroll */
-    text-align: center; /* Texte centré */
-    border-right: 1px solid #ddd;
-    display: flex; /* Utiliser flex pour centrer le contenu */
-    justify-content: center; /* Centrer horizontalement */
-    align-items: center; /* Centrer verticalement */
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Contenu à l'intérieur des sections */
 .section-content {
-    max-width: 800px; /* Largeur maximale pour limiter le texte */
-    margin: 0 auto; /* Centrer le contenu */
-    text-align: justify; /* Justifie le texte pour un rendu propre */
+    max-width: 800px; /* Limite la largeur du contenu */
+    margin: 0 auto;
+    text-align: justify;
 }
 
-/* Titres */
-h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-align: center; /* Centre les titres */
-}
-
-/* Paragraphes */
-p {
-    font-size: 18px; /* Taille du texte */
-    line-height: 1.6; /* Espacement vertical */
-    margin-bottom: 20px; /* Espacement entre paragraphes */
-    text-align: justify; /* Justifie le texte */
-}
-
-/* Images */
+/* Header Styles */
 .header img {
-    max-width: 150px; /* Limite la taille de l'image */
+    max-width: 120px; /* Réduction de la taille de l'image */
     height: auto;
-    border-radius: 50%; /* Rond pour l'image */
+    border-radius: 50%;
     margin-bottom: 20px;
 }
 
-/* Liens */
+.header h1 {
+    font-size: 28px; /* Ajuste la taille du titre */
+    margin-top: 10px;
+}
+
+.header p {
+    font-size: 18px;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Paragraphs */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Lists */
+ul {
+    list-style: disc;
+    padding-left: 40px; /* Décalage pour les puces */
+}
+
+li {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Links */
 a {
-    color: #0051a3; /* Bleu doux pour les liens */
+    color: #0051a3;
     text-decoration: none;
 }
 
