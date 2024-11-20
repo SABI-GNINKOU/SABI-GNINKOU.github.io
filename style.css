@@ -70,14 +70,18 @@ body {
     margin-bottom: 30px;
     text-align: center;
 }
-
-.header img {
-    max-width: 120px; /* Limite la taille de l'image */
-    height: auto;
-    border-radius: 50%; /* Rond pour l'image */
-    margin: 20px auto; /* Centré avec un espace en bas */
-    display: block; /* Permet de centrer l'image */
+/* Images */
+.profile-image {
+    max-width: 120px; /* Taille maximale de l'image */
+    height: auto; /* Conserve les proportions */
+    border-radius: 50%; /* Rend l'image circulaire */
+    margin-bottom: 20px; /* Espacement sous l'image */
+    display: block; /* Centre l'image */
+    margin-left: auto;
+    margin-right: auto; /* Centre horizontalement */
 }
+
+
 
 /* Titres */
 h2 {
