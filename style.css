@@ -135,4 +135,36 @@ body {
     line-height: 1.8;
     margin-bottom: 30px;
 }
+/* Styling for Research Interests Section */
+.research-interests {
+    max-width: 800px;
+    margin: 40px auto; /* Center with space around */
+    text-align: left;
+}
+
+.research-interests h2 {
+    font-size: 24px;
+    font-weight: normal; /* Enlève le gras */
+    color: #333;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-family: "Georgia", serif;
+}
+
+/* Research Interests List Styling */
+.research-list {
+    list-style-type: disc; /* Utilise des puces classiques */
+    padding-left: 20px; /* Espace pour aligner les puces avec le texte */
+    margin: 0;
+    line-height: 1.8; /* Interligne pour aérer */
+}
+
+.research-list li {
+    font-size: 16px;
+    color: #333;
+    font-weight: normal; /* Enlève le gras */
+    margin-bottom: 10px;
+}
 
