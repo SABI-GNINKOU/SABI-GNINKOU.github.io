@@ -132,7 +132,7 @@ body {
     text-align: center; /* Centre le contenu */
     padding: 10px 0; /* Espacement au-dessus et en dessous */
     font-family: Arial, sans-serif; /* Police lisible */
-    font-size: 14px; /* Taille de police */
+    font-size: 16px; /* Taille de police */
     color: #333; /* Couleur du texte */
 }
 
@@ -140,7 +140,7 @@ body {
     width: 90%; /* Longueur de la ligne */
     margin: 0 auto 10px; /* Centrage et espacement en dessous */
     border: 0; /* Supprime les bordures par défaut */
-    border-top: 1px solid #000; /* Ligne noire fine */
+    
 }
 
 .footer p {
