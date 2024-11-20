@@ -1,51 +1,83 @@
-/* Général */
+/* Global Styles */
 body {
-    font-family: "Georgia", serif; /* Police élégante */
-    color: #333; /* Couleur neutre */
-    line-height: 1.6; /* Espacement vertical entre les lignes */
-    background-color: #fff; /* Fond blanc */
+    font-family: "Georgia", serif;
     margin: 0;
     padding: 0;
-    text-align: center; /* Centrage global du contenu */
+    background-color: #fff;
+    color: #333;
 }
 
-/* Conteneur principal */
-.content-center {
-    max-width: 800px; /* Limite la largeur à 800px */
-    margin: 0 auto; /* Centrage horizontal */
-    padding: 20px; /* Espacement interne */
-    text-align: center; /* Texte centré */
+/* Navigation Bar */
+.navbar {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    text-align: center;
 }
 
-/* Titres */
-h2 {
-    font-size: 24px; /* Taille des titres */
-    font-weight: normal;
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.navbar ul li a:hover {
+    color: #0051a3;
+}
+
+/* Horizontal Sections */
+.horizontal-container {
+    display: flex;
+    flex-direction: row; /* Aligne les sections horizontalement */
+    overflow-x: auto; /* Permet de scroller horizontalement si le contenu dépasse */
+    scroll-snap-type: x mandatory; /* Permet un défilement fluide */
+}
+
+.section {
+    min-width: 100vw; /* Chaque section occupe toute la largeur de la fenêtre */
+    padding: 40px;
+    scroll-snap-align: start; /* Alignement au début pour le scroll */
+    text-align: center;
+    border-right: 1px solid #ddd;
+}
+
+.section:last-child {
+    border-right: none;
+}
+
+/* Header */
+.header {
+    margin-bottom: 30px;
+}
+
+.header img {
+    max-width: 150px;
+    border-radius: 50%;
     margin-bottom: 20px;
-    color: #333; /* Couleur sobre */
 }
 
-/* Paragraphes */
-p {
-    font-size: 18px; /* Taille des paragraphes */
-    margin: 10px 0; /* Espacement entre les paragraphes */
+/* Titles */
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
-/* Image */
-.profile-image {
-    max-width: 150px; /* Limite la largeur à 150px */
-    height: auto; /* Maintient le ratio */
-    border-radius: 50%; /* Rendre l'image circulaire */
-    margin: 20px auto; /* Centrer l'image avec un espace autour */
-    display: block;
-}
-
-/* Liens */
+/* Links */
 a {
-    color: #0051a3; /* Bleu doux */
-    text-decoration: none; /* Pas de soulignement par défaut */
+    color: #0051a3;
+    text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline; /* Soulignement au survol */
+    text-decoration: underline;
 }
