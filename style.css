@@ -1,44 +1,38 @@
-/* Image Styling */
-.profile-image {
-    max-width: 200px;
-    height: auto;
-    border-radius: 50%;
-    display: block;
-    margin: 20px auto;
+/* Styling for Research Interests Section */
+.research-interests {
+    max-width: 800px;
+    margin: 40px auto; /* Center with space around */
+    text-align: left;
 }
 
-/* General Section Styles */
-.section h2 {
+.research-interests h2 {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: normal; /* Enlève le gras */
     color: #333;
-    margin: 30px 0 10px;
-    text-align: center;
-    border-top: 1px solid #333;
-    padding-top: 10px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-family: "Georgia", serif;
 }
 
-/* Specific Styles for Each Part */
-.introduction p, .job-opportunities p, .research-interests ul {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333;
-    text-align: center;
+/* Research Interests List Styling */
+.research-list {
+    list-style-type: disc; /* Utilise des puces classiques */
+    padding-left: 20px; /* Espace pour aligner les puces avec le texte */
+    margin: 0;
+    line-height: 1.8; /* Interligne pour aérer */
 }
 
-.job-opportunities p {
-    color: red;
-    font-weight: bold;
-}
-
-.research-interests ul {
-    list-style-type: none;
-    padding-left: 0;
-    margin-top: 10px;
-}
-
-.research-interests li {
+.research-list li {
     font-size: 16px;
     color: #333;
-    line-height: 1.6;
+    font-weight: normal; /* Enlève le gras */
+    margin-bottom: 10px;
 }
+
+
+
+
+
+
