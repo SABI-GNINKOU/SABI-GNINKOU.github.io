@@ -1,8 +1,8 @@
 /* Image Styling */
 .profile-image {
-    max-width: 120px;
+    max-width: 200px;
     height: auto;
-    border-radius: 40%;
+    border-radius: 50%;
     display: block;
     margin: 20px auto;
 }
