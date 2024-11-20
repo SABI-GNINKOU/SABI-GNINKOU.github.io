@@ -8,31 +8,11 @@
 /* Body Styling */
 body {
     font-family: "Georgia", serif;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #001f3f !important; /* Utilisez la couleur exacte souhaitée et ajoutez !important */
+    color: #f9f9f9; /* Couleur du texte pour contraste */
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-/* Navbar Styles */
-.navbar {
-    text-align: center;
-    font-family: Arial, sans-serif;
-    margin-top: 20px;
-}
-.navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-}
-.navbar ul li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
-}
-.navbar ul li a:hover {
-    color: #0051a3;
 }
 
 /* Header Styles */
@@ -41,76 +21,5 @@ body {
     padding: 40px 20px;
     border-bottom: 1px solid #ccc;
     margin-bottom: 40px;
-}
-.header img {
-    max-width: 300px;
-    height: auto;
-    display: block;
-    margin: 0 auto 20px;
-    border-radius: 5px;
-}
-.header h1 {
-    font-size: 32px;
-    font-weight: normal;
-    color: #333;
-    margin: 10px 0;
-}
-.header p {
-    color: #666;
-    font-size: 18px;
-    margin: 5px 0;
-    font-weight: lighter;
-}
-
-/* Section Title Styling */
-.section h2 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    border-top: 1px solid #333;
-    padding-top: 20px;
-    text-align: left;
-}
-
-/* Introduction and Job Opportunities Styling */
-.introduction, .job-opportunities, .research-interests {
-    max-width: 800px;
-    margin: 0 auto 30px;
-    text-align: left;
-    line-height: 1.8;
-}
-
-.job-opportunities h2, .job-opportunities p {
-    color: red;
-    font-weight: bold;
-}
-
-/* Research Interests List Styling */
-.research-interests ul {
-    list-style-type: none;
-    padding-left: 0;
-    margin-top: 10px;
-    line-height: 1.8;
-}
-
-.research-list li {
-    font-size: 16px;
-    color: #333;
-}
-
-.research-list li strong {
-    color: #0051a3;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #f7f7f7;
-    font-size: 14px;
-    color: #666;
-    border-top: 1px solid #ccc;
-    width: 100%;
+    background-color: #001f3f; /* Assurez-vous que la section header a aussi cette couleur si nécessaire */
 }
