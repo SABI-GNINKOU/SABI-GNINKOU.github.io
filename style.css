@@ -8,8 +8,8 @@
 /* Body Styling */
 body {
     font-family: "Georgia", serif;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #ffffff; /* Fond blanc */
+    color: #333; /* Texte gris foncé */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,7 +39,7 @@ body {
 .header {
     text-align: center;
     padding: 40px 20px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #ddd;
     margin-bottom: 40px;
 }
 .header img {
@@ -69,12 +69,12 @@ body {
     color: #333;
     margin-top: 40px;
     margin-bottom: 20px;
-    border-top: 1px solid #333;
+    border-top: 1px solid #ddd;
     padding-top: 20px;
     text-align: left;
 }
 
-/* Introduction and Job Opportunities Styling */
+/* Introduction, Job Opportunities, and Research Interests */
 .introduction, .job-opportunities, .research-interests {
     max-width: 800px;
     margin: 0 auto 30px;
@@ -101,16 +101,16 @@ body {
 }
 
 .research-list li strong {
-    color: #0051a3;
+    color: #0051a3; /* Couleur pour le texte important */
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 20px 0;
-    background-color: #f7f7f7;
+    background-color: #ffffff; /* Fond blanc */
     font-size: 14px;
     color: #666;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #ddd;
     width: 100%;
 }
