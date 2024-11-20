@@ -1,113 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Razak Christophe SABI GNINKOU - PhD Candidate</title>
-    <style>
-        /* General Styles */
-        body {
-            font-family: "Helvetica Neue", Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f7f7f7;
-            color: #333;
-            display: flex;
-            overflow-x: hidden;
-        }
-        header {
-            background-color: #002060;
-            color: #ffffff;
-            text-align: center;
-            padding: 20px;
-        }
-        .sidebar {
-            width: 250px;
-            background-color: #002060;
-            color: #ffffff;
-            position: fixed;
-            height: 100%;
-            padding-top: 20px;
-        }
-        .sidebar a {
-            display: block;
-            color: #ffffff;
-            text-decoration: none;
-            padding: 15px;
-            font-size: 14px;
-        }
-        .sidebar a:hover {
-            background-color: #0051a3;
-        }
-        .container {
-            display: flex;
-            flex-direction: row;
-            overflow-x: auto;
-            width: 100%;
-            margin-left: 250px;
-        }
-        .section {
-            flex: none;
-            width: 100vw;
-            padding: 40px;
-            box-sizing: border-box;
-            font-size: 16px;
-        }
-        footer {
-            background-color: #002060;
-            color: #ffffff;
-            text-align: center;
-            padding: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1>Razak Christophe Sabi Gninkou</h1>
-    <p>PhD Candidate in Applied Mathematics and Machine Learning at Université Polytechnique Hauts-de-France and EMSE</p>
-</header>
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#cv">CV</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#talks">Talks & Events</a></li>
+            <li><a href="#teaching">Teaching</a></li>
+        </ul>
+    </nav>
 
-<div class="sidebar">
-    <h2 style="text-align: center;">Navigation</h2>
-    <a href="#" onclick="loadSection('about')">About Me</a>
-    <a href="#" onclick="loadSection('phd-info')">PhD Information</a>
-    <a href="#" onclick="loadSection('academic-background')">Academic Background</a>
-    <a href="#" onclick="loadSection('research-experience')">Research Experience</a>
-    <a href="#" onclick="loadSection('research')">Research Interests</a>
-    <a href="#" onclick="loadSection('outside-interests')">Outside Interests</a>
-</div>
-
-<div class="container" id="main-content">
-    <!-- Sections will load here -->
-</div>
-
-<script>
-    const sections = {
-        'about': 'about.html',
-        'phd-info': 'phd-info.html',
-        'academic-background': 'academic-background.html',
-        'research-experience': 'research-experience.html',
-        'research': 'research.html',
-        'outside-interests': 'outside-interests.html'
-    };
-
-    function loadSection(section) {
-        fetch(sections[section])
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('main-content').innerHTML = `<div class="section">${data}</div>`;
-            })
-            .catch(error => console.error('Error loading content:', error));
-    }
-
-    // Load default section
-    loadSection('about');
-</script>
-
-<footer>
-    <p>&copy; 2024 Razak Christophe Sabi Gninkou - All rights reserved</p>
-</footer>
+    <!-- Header with image and title -->
+    <header class="header">
+        <img src="your-image.jpg" alt="Image of the building or relevant background">
+        <h1>Razak Christophe Sabi Gninkou</h1>
+        <p>PhD Candidate in Applied Mathematics and Machine Learning</p>
+        <p>Université Polytechnique Hauts-de-France and École des Mines de Saint-Étienne (EMSE)</p>
+    </header>
 
 </body>
 </html>
