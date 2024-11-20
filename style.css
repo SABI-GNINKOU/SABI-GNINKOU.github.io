@@ -1,83 +1,116 @@
-/* Global Styles */
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
 body {
     font-family: "Georgia", serif;
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
+    background-color: #f9f9f9;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Navigation Bar */
+/* Navbar Styles */
 .navbar {
-    background-color: #f8f9fa;
-    border-bottom: 1px solid #ddd;
-    padding: 10px 0;
     text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
 }
-
 .navbar ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    gap: 30px;
 }
-
 .navbar ul li a {
     text-decoration: none;
     color: #333;
     font-size: 16px;
-    padding: 5px 10px;
 }
-
 .navbar ul li a:hover {
     color: #0051a3;
 }
 
-/* Horizontal Sections */
-.horizontal-container {
-    display: flex;
-    flex-direction: row; /* Aligne les sections horizontalement */
-    overflow-x: auto; /* Permet de scroller horizontalement si le contenu dépasse */
-    scroll-snap-type: x mandatory; /* Permet un défilement fluide */
-}
-
-.section {
-    min-width: 100vw; /* Chaque section occupe toute la largeur de la fenêtre */
-    padding: 40px;
-    scroll-snap-align: start; /* Alignement au début pour le scroll */
-    text-align: center;
-    border-right: 1px solid #ddd;
-}
-
-.section:last-child {
-    border-right: none;
-}
-
-/* Header */
+/* Header Styles */
 .header {
-    margin-bottom: 30px;
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 40px;
 }
-
 .header img {
-    max-width: 150px;
-    border-radius: 50%;
-    margin-bottom: 20px;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 5px;
+}
+.header h1 {
+    font-size: 32px;
+    font-weight: normal;
+    color: #333;
+    margin: 10px 0;
+}
+.header p {
+    color: #666;
+    font-size: 18px;
+    margin: 5px 0;
+    font-weight: lighter;
 }
 
-/* Titles */
-h2 {
+/* Section Title Styling */
+.section h2 {
     font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 40px;
     margin-bottom: 20px;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    text-align: left;
 }
 
-/* Links */
-a {
+/* Introduction and Job Opportunities Styling */
+.introduction, .job-opportunities, .research-interests {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    text-align: left;
+    line-height: 1.8;
+}
+
+.job-opportunities h2, .job-opportunities p {
+    color: red;
+    font-weight: bold;
+}
+
+/* Research Interests List Styling */
+.research-interests ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px;
+    line-height: 1.8;
+}
+
+.research-list li {
+    font-size: 16px;
+    color: #333;
+}
+
+.research-list li strong {
     color: #0051a3;
-    text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f7f7f7;
+    font-size: 14px;
+    color: #666;
+    border-top: 1px solid #ccc;
+    width: 100%;
 }
