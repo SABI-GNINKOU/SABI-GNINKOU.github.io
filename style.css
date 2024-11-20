@@ -136,15 +136,3 @@ body {
     margin-bottom: 30px;
 }
 
-.research-list {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 10px;
-}
-
-.research-list li {
-    font-size: 16px;
-    color: #333;
-    margin: 10px 0;
-}
-
