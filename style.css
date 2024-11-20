@@ -7,116 +7,62 @@ body {
     color: #333;
 }
 
-/* Navigation Bar */
-.navbar {
-    background-color: #f8f9fa;
-    border-bottom: 1px solid #ddd;
-    padding: 10px 0;
-    text-align: center;
-}
-
-.navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
-    padding: 5px 10px;
-}
-
-.navbar ul li a:hover {
-    color: #0051a3;
-}
-
 /* Horizontal Sections */
 .horizontal-container {
     display: flex;
-    flex-direction: row; /* Aligne les sections horizontalement */
-    overflow-x: auto; /* Permet de scroller horizontalement si le contenu dépasse */
-    scroll-snap-type: x mandatory; /* Permet un défilement fluide */
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
 }
 
 .section {
-    min-width: 100vw; /* Chaque section occupe toute la largeur de la fenêtre */
+    min-width: 100vw;
     padding: 40px;
-    scroll-snap-align: start; /* Alignement fluide pour le scroll */
+    scroll-snap-align: start;
     text-align: center;
-    border-right: 1px solid #ddd;
-    display: flex; /* Utiliser flex pour centrer le contenu */
-    justify-content: center; /* Centrer horizontalement */
-    align-items: center; /* Centrer verticalement */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.section:last-child {
-    border-right: none;
-}
-
-/* Contenu à l'intérieur des sections */
 .section-content {
-    max-width: 800px; /* Largeur maximale pour limiter le texte */
-    margin: 0 auto; /* Centrer le contenu */
-    text-align: justify; /* Justifie le texte pour un rendu propre */
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
 }
 
-/* Header */
-.header {
-    margin-bottom: 30px;
-    text-align: center;
-}
-/* Images */
-.profile-image {
-    max-width: 120px; /* Taille maximale de l'image */
+/* Header Styles */
+.header img {
+    max-width: 150px; /* Taille de l'image ajustée */
     height: auto; /* Conserve les proportions */
     border-radius: 50%; /* Rend l'image circulaire */
-    margin-bottom: 20px; /* Espacement sous l'image */
-    display: block; /* Centre l'image */
-    margin-left: auto;
-    margin-right: auto; /* Centre horizontalement */
+    margin: 20px auto; /* Centre l'image avec espacement */
+    display: block;
 }
 
-
-
-/* Titres */
-h2 {
+.header h1 {
+    margin-top: 10px;
     font-size: 24px;
-    margin-bottom: 20px;
-    text-align: center; /* Centre les titres */
 }
 
-/* Paragraphes */
-p {
-    font-size: 18px; /* Taille du texte */
-    line-height: 1.6; /* Espacement vertical */
-    margin-bottom: 20px; /* Espacement entre paragraphes */
-    text-align: justify; /* Justifie le texte */
+.header p {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Marges du texte */
+.section-content p {
+    margin: 20px 0;
+    line-height: 1.6;
 }
 
 /* Liens */
 a {
-    color: #0051a3; /* Bleu doux pour les liens */
+    color: #0051a3;
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
-}
-
-/* Images */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Correction pour éviter des duplications */
-.section-content img {
-    max-width: 150px; /* Ajuste les dimensions de l'image */
-    margin: 0 auto;
-    display: block;
 }
