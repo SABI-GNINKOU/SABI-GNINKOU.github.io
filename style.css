@@ -1,68 +1,44 @@
-/* Global Styles */
-body {
-    font-family: "Georgia", serif;
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
-    color: #333;
-}
-
-/* Horizontal Sections */
-.horizontal-container {
-    display: flex;
-    flex-direction: row;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-}
-
-.section {
-    min-width: 100vw;
-    padding: 40px;
-    scroll-snap-align: start;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.section-content {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: justify;
-}
-
-/* Header Styles */
-.header img {
-    max-width: 150px; /* Taille de l'image ajustée */
-    height: auto; /* Conserve les proportions */
-    border-radius: 50%; /* Rend l'image circulaire */
-    margin: 20px auto; /* Centre l'image avec espacement */
+/* Image Styling */
+.profile-image {
+    max-width: 120px;
+    height: auto;
+    border-radius: 40%;
     display: block;
+    margin: 20px auto;
 }
 
-.header h1 {
-    margin-top: 10px;
+/* General Section Styles */
+.section h2 {
     font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 30px 0 10px;
+    text-align: center;
+    border-top: 1px solid #333;
+    padding-top: 10px;
 }
 
-.header p {
-    margin-top: 5px;
+/* Specific Styles for Each Part */
+.introduction p, .job-opportunities p, .research-interests ul {
     font-size: 16px;
-    color: #555;
-}
-
-/* Marges du texte */
-.section-content p {
-    margin: 20px 0;
     line-height: 1.6;
+    color: #333;
+    text-align: center;
 }
 
-/* Liens */
-a {
-    color: #0051a3;
-    text-decoration: none;
+.job-opportunities p {
+    color: red;
+    font-weight: bold;
 }
 
-a:hover {
-    text-decoration: underline;
+.research-interests ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.research-interests li {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
 }
