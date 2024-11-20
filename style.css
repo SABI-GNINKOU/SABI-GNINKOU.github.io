@@ -1,82 +1,116 @@
-/* Global Styles */
-body {
-    font-family: "Georgia", serif;
+/* Global reset */
+* {
     margin: 0;
     padding: 0;
-    background-color: #fff; /* Fond blanc */
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: "Georgia", serif;
+    background-color: #f9f9f9;
     color: #333;
-}
-
-/* Horizontal Sections */
-.horizontal-container {
     display: flex;
-    flex-direction: row;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-}
-
-.section {
-    min-width: 100vw; /* Section occupe toute la largeur */
-    padding: 40px 20px; /* Ajoute des marges sur les côtés */
-    scroll-snap-align: start;
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    text-align: center; /* Texte centré */
 }
 
-.section-content {
-    max-width: 800px; /* Largeur maximale limitée */
-    margin: 0 auto;
-    text-align: justify;
+/* Navbar Styles */
+.navbar {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+.navbar ul li a:hover {
+    color: #0051a3;
 }
 
 /* Header Styles */
+.header {
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 40px;
+}
 .header img {
-    max-width: 120px; /* Taille de l'image réduite */
+    max-width: 300px;
     height: auto;
-    border-radius: 50%; /* Image ronde */
-    margin-bottom: 20px;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 5px;
 }
-
 .header h1 {
-    font-size: 28px; /* Taille de titre réduite */
-    margin-top: 10px;
-    text-align: center; /* Centre le titre */
+    font-size: 32px;
+    font-weight: normal;
+    color: #333;
+    margin: 10px 0;
 }
-
 .header p {
-    font-size: 16px; /* Taille plus petite pour les sous-titres */
-    color: #555; /* Couleur douce */
-    margin-top: 5px;
+    color: #666;
+    font-size: 18px;
+    margin: 5px 0;
+    font-weight: lighter;
 }
 
-/* Paragraphes */
-p {
-    font-size: 16px; /* Taille de texte normale */
-    line-height: 1.8; /* Espacement vertical agréable */
+/* Section Title Styling */
+.section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 40px;
     margin-bottom: 20px;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    text-align: left;
 }
 
-/* Listes */
-ul {
-    list-style: disc;
-    padding-left: 40px; /* Décalage pour les puces */
-    text-align: left; /* Aligne les listes à gauche */
+/* Introduction and Job Opportunities Styling */
+.introduction, .job-opportunities, .research-interests {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    text-align: left;
+    line-height: 1.8;
 }
 
-li {
+.job-opportunities h2, .job-opportunities p {
+    color: red;
+    font-weight: bold;
+}
+
+/* Research Interests List Styling */
+.research-interests ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px;
+    line-height: 1.8;
+}
+
+.research-list li {
     font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 10px;
+    color: #333;
 }
 
-/* Liens */
-a {
-    color: #0051a3; /* Bleu doux pour les liens */
-    text-decoration: none;
+.research-list li strong {
+    color: #0051a3;
 }
 
-a:hover {
-    text-decoration: underline;
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f7f7f7;
+    font-size: 14px;
+    color: #666;
+    border-top: 1px solid #ccc;
+    width: 100%;
 }
