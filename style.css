@@ -105,3 +105,68 @@ section {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+/* Contact Section Styles */
+.contact-section {
+    text-align: center;
+    font-family: "Georgia", serif;
+    padding: 40px 20px;
+    color: #333;
+}
+
+.contact-section h2 {
+    font-size: 32px;
+    font-weight: normal;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.contact-section h2::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 1px;
+    background-color: #333;
+    margin: 10px auto;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 30px;
+}
+
+.contact-item h3 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.contact-item p {
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.email {
+    font-size: 16px;
+    color: #666;
+    margin-top: 20px;
+}
+
+.note {
+    font-size: 14px;
+    color: #aaa;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f7f7f7;
+    font-size: 14px;
+    color: #666;
+    border-top: 1px solid #ccc;
+    margin-top: 50px;
+}
