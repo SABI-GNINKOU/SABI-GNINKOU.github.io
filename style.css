@@ -221,17 +221,18 @@ body {
 .contact .email a:hover {
     text-decoration: underline; /* Soulignement au survol */
 }
-/* Section CV */
+/* Section CV - Alignement à gauche */
 .section {
     margin: 40px auto;
     max-width: 800px;
     line-height: 1.8;
     font-family: Arial, sans-serif;
-    color: #000; /* Texte noir pour un design sans couleur */
+    color: #000; /* Texte noir */
+    text-align: left; /* Aligne tout le texte à gauche */
 }
 
 .section h2 {
-    text-align: center;
+    text-align: left; /* Titre principal aligné à gauche */
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -249,6 +250,7 @@ body {
     text-transform: uppercase;
     border-bottom: 1px solid #000; /* Ligne fine sous les titres */
     padding-bottom: 5px;
+    text-align: left; /* Sous-titres alignés à gauche */
 }
 
 .cv-subsection ul {
@@ -258,6 +260,7 @@ body {
 
 .cv-subsection ul li {
     margin-bottom: 15px; /* Espacement entre les items */
+    text-align: left; /* Alignement à gauche pour chaque ligne */
 }
 
 .cv-subsection ul li strong {
