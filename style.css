@@ -169,57 +169,56 @@ body {
     margin: 10px 0; /* Espacement */
 }
 
-/* Contact Section */
+/* Section Contact */
 .contact {
     text-align: center;
-    font-family: Arial, sans-serif;
     margin: 40px auto;
+    font-family: Arial, sans-serif;
+    line-height: 1.8; /* Espacement entre les lignes */
     max-width: 800px; /* Largeur maximale */
-    line-height: 1.8;
 }
 
 .contact h2 {
-    font-size: 32px;
+    font-size: 32px; /* Taille du titre */
     font-weight: bold;
-    margin-bottom: 30px;
-    text-transform: uppercase;
+    margin-bottom: 30px; /* Espace sous le titre */
+    text-transform: uppercase; /* Texte en majuscules */
 }
 
 .contact .contact-details {
     display: flex;
-    justify-content: space-between; /* Colonne pour les universités */
-    gap: 20px;
+    justify-content: space-between; /* Sépare les universités */
+    gap: 30px; /* Espace entre les colonnes */
     margin-bottom: 30px;
 }
 
 .contact .university {
-    flex: 1; /* Colonne égale pour chaque université */
-    text-align: center;
-    font-size: 16px;
-    color: #333;
+    flex: 1; /* Chaque colonne prend la même largeur */
+    text-align: left; /* Aligne le texte à gauche */
 }
 
 .contact .university h3 {
-    font-size: 18px;
+    font-size: 18px; /* Taille des sous-titres */
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .contact .email {
-    font-size: 14px;
-    color: #666;
+    font-size: 14px; /* Taille du texte des emails */
+    color: #333;
+    text-align: left; /* Aligne les emails à gauche */
 }
 
 .contact .email p {
-    margin: 5px 0;
+    margin: 5px 0; /* Espacement entre les éléments */
 }
 
 .contact .email a {
-    color: #0051a3;
-    text-decoration: none;
+    color: #0051a3; /* Couleur des liens */
+    text-decoration: none; /* Supprime le soulignement par défaut */
 }
 
 .contact .email a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Soulignement au survol */
 }
 
