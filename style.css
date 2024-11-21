@@ -155,7 +155,7 @@ body {
 
 /* Ligne sous l'image dans le header */
 .header .line {
-    width: 100%; /* Largeur pleine */
+    width: 100vw; /* Largeur pleine */
     height: 3px; /* Épaisseur */
     background-color: #333; /* Couleur */
     margin: 20px 0; /* Espacement */
@@ -163,7 +163,7 @@ body {
 
 /* Ligne dans le footer */
 .footer .line {
-    width: 100%; /* Largeur pleine */
+    width: 100vw; /* Largeur pleine */
     height: 2px; /* Épaisseur */
     background-color: #333; /* Couleur */
     margin: 10px 0; /* Espacement */
