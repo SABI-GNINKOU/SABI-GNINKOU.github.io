@@ -155,16 +155,16 @@ body {
 
 /* Ligne sous l'image dans le header */
 .header .line {
-    width: 100vw; /* Largeur pleine */
-    height: 3px; /* Épaisseur */
+    width: 90vw; /* Largeur pleine */
+    height: 1px; /* Épaisseur */
     background-color: #333; /* Couleur */
     margin: 20px 0; /* Espacement */
 }
 
 /* Ligne dans le footer */
 .footer .line {
-    width: 100vw; /* Largeur pleine */
-    height: 2px; /* Épaisseur */
+    width: 90vw; /* Largeur pleine */
+    height: 1px; /* Épaisseur */
     background-color: #333; /* Couleur */
     margin: 10px 0; /* Espacement */
 }
