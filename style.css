@@ -126,6 +126,20 @@ body {
     margin-top: 10px;
     line-height: 1.8;
 }
+.footer {
+    text-align: center; /* Centre le contenu */
+    font-family: Arial, sans-serif; /* Police lisible */
+    font-size: 14px; /* Taille de police */
+    color: #333; /* Couleur du texte */
+    padding: 10px 0; /* Espacement autour */
+}
+
+.footer hr {
+    width: 80%; /* Largeur de la ligne */
+    margin: 0 auto 10px; /* Centrage et espacement sous la ligne */
+    border: none; /* Supprime les bordures par défaut */
+    border-top: 1px solid #333; /* Ligne fine noire */
+}
 
 
 .research-list li {
