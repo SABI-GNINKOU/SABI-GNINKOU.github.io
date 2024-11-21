@@ -168,3 +168,58 @@ body {
     background-color: #333; /* Couleur */
     margin: 10px 0; /* Espacement */
 }
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 40px auto;
+    max-width: 800px; /* Largeur maximale */
+    line-height: 1.8;
+}
+
+.contact h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.contact .contact-details {
+    display: flex;
+    justify-content: space-between; /* Colonne pour les universités */
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.contact .university {
+    flex: 1; /* Colonne égale pour chaque université */
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+}
+
+.contact .university h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.contact .email {
+    font-size: 14px;
+    color: #666;
+}
+
+.contact .email p {
+    margin: 5px 0;
+}
+
+.contact .email a {
+    color: #0051a3;
+    text-decoration: none;
+}
+
+.contact .email a:hover {
+    text-decoration: underline;
+}
+
