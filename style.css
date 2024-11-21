@@ -221,56 +221,62 @@ body {
 .contact .email a:hover {
     text-decoration: underline; /* Soulignement au survol */
 }
-/* Section CV - Alignement à gauche */
+
+/* Section CV */
 .section {
     margin: 40px auto;
     max-width: 800px;
-    line-height: 1.8;
     font-family: Arial, sans-serif;
-    color: #000; /* Texte noir */
-    text-align: left; /* Aligne tout le texte à gauche */
+    color: #000;
 }
 
 .section h2 {
-    text-align: left; /* Titre principal aligné à gauche */
-    font-size: 24px;
+    font-size: 28px;
+    text-align: left;
     font-weight: bold;
     margin-bottom: 20px;
-    text-transform: uppercase;
-}
-
-.cv-subsection {
-    margin-bottom: 30px;
 }
 
 .cv-subsection h3 {
     font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 15px;
     text-transform: uppercase;
-    border-bottom: 1px solid #000; /* Ligne fine sous les titres */
+    margin-bottom: 10px;
+    border-bottom: 1px solid #000; /* Ligne fine sous le titre */
     padding-bottom: 5px;
-    text-align: left; /* Sous-titres alignés à gauche */
 }
 
 .cv-subsection ul {
-    list-style: none; /* Supprime les puces */
+    list-style: none;
     padding: 0;
 }
 
 .cv-subsection ul li {
-    margin-bottom: 15px; /* Espacement entre les items */
-    text-align: left; /* Alignement à gauche pour chaque ligne */
+    margin-bottom: 10px;
+    display: flex;
+    gap: 15px;
 }
 
 .cv-subsection ul li strong {
-    font-weight: bold; /* Texte en gras pour les titres */
+    display: inline-block;
+    width: 150px; /* Colonne fixe pour les dates */
+    font-weight: bold;
 }
 
 .cv-subsection ul li span {
-    font-style: italic; /* Années en italique */
+    font-style: italic;
     font-size: 14px;
-    color: #555; /* Couleur discrète pour les années */
+    color: #555;
 }
+
+/* Alignement pour les sections */
+.cv-subsection ul li {
+    text-align: left; /* Texte bien aligné à gauche */
+}
+
+/* Espace entre les blocs */
+.cv-subsection {
+    margin-bottom: 30px;
+}
+
 
 
