@@ -170,7 +170,7 @@ body {
 }
 
 /* Section Contact */
-.contact {
+.section {
     text-align: center;
     margin: 40px auto;
     font-family: Arial, sans-serif;
@@ -178,7 +178,7 @@ body {
     max-width: 800px; /* Largeur maximale */
 }
 
-.contact h2 {
+.section h2 {
     font-size: 32px; /* Taille du titre */
     font-weight: bold;
     margin-bottom: 30px; /* Espace sous le titre */
