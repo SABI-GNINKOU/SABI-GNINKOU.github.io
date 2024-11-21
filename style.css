@@ -153,3 +153,18 @@ body {
     color: #0051a3;
 }
 
+/* Ligne sous l'image dans le header */
+.header .line {
+    width: 100%; /* Largeur pleine */
+    height: 3px; /* Épaisseur */
+    background-color: #333; /* Couleur */
+    margin: 20px 0; /* Espacement */
+}
+
+/* Ligne dans le footer */
+.footer .line {
+    width: 100%; /* Largeur pleine */
+    height: 2px; /* Épaisseur */
+    background-color: #333; /* Couleur */
+    margin: 10px 0; /* Espacement */
+}
