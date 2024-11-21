@@ -128,27 +128,6 @@ body {
 }
 
 
-.footer {
-    text-align: center; /* Centre le contenu */
-    padding: 10px 0; /* Espacement au-dessus et en dessous */
-    font-family: Arial, sans-serif; /* Police lisible */
-    font-size: 16px; /* Taille de police */
-    color: #333; /* Couleur du texte */
-border-top: 1px solid #ccc;
-}
-
-.footer hr {
-    width: 90%; /* Longueur de la ligne */
-    margin: 0 auto 10px; /* Centrage et espacement en dessous */
-    border: 0; /* Supprime les bordures par défaut */
-    
-}
-
-.footer p {
-    margin: 0; /* Supprime les marges */
-}
-
-
 .research-list li {
     font-size: 16px;
     color: #333;
@@ -158,13 +137,3 @@ border-top: 1px solid #ccc;
     color: #0051a3;
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #f7f7f7;
-    font-size: 14px;
-    color: #666;
-    border-top: 1px solid #ccc;
-    width: 100%;
-}
