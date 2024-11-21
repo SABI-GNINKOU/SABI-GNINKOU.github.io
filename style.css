@@ -221,4 +221,37 @@ body {
 .contact .email a:hover {
     text-decoration: underline; /* Soulignement au survol */
 }
+/* CV Section */
+.cv-section {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.cv-section h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #0051a3;
+}
+
+.cv-subsection {
+    margin-bottom: 30px; /* Espacement entre les sous-sections */
+}
+
+.cv-subsection ul {
+    list-style-type: none; /* Retire les puces des listes */
+    padding-left: 0;
+}
+
+.cv-subsection ul li {
+    margin-bottom: 10px; /* Espacement entre les items */
+}
+
+.cv-subsection ul li strong {
+    font-weight: bold;
+}
+
 
