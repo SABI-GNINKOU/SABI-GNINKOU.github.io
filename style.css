@@ -171,7 +171,7 @@ body {
 
 /* Section Contact */
 .section {
-    text-align: center;
+    text-align: left;
     margin: 40px auto;
     font-family: Arial, sans-serif;
     line-height: 1.8; /* Espacement entre les lignes */
@@ -179,17 +179,17 @@ body {
 }
 
 .section h2 {
-    font-size: 32px; /* Taille du titre */
+    font-size: 40px; /* Taille du titre */
     font-weight: bold;
-    margin-bottom: 30px; /* Espace sous le titre */
+    margin-bottom: 60px; /* Espace sous le titre */
     text-transform: uppercase; /* Texte en majuscules */
 }
 
 .contact .contact-details {
     display: flex;
     justify-content: space-between; /* Sépare les universités */
-    gap: 30px; /* Espace entre les colonnes */
-    margin-bottom: 30px;
+    gap: 40px; /* Espace entre les colonnes */
+    margin-bottom: 40px;
 }
 
 .contact .university {
@@ -198,7 +198,7 @@ body {
 }
 
 .contact .university h3 {
-    font-size: 18px; /* Taille des sous-titres */
+    font-size: 25px; /* Taille des sous-titres */
     font-weight: bold;
     margin-bottom: 10px;
 }
