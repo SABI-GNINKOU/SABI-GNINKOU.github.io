@@ -171,7 +171,7 @@ body {
 
 /* Section Contact */
 .section {
-    text-align: left;
+    text-align: right;
     margin: 40px auto;
     font-family: Arial, sans-serif;
     line-height: 1.8; /* Espacement entre les lignes */
@@ -181,7 +181,7 @@ body {
 .section h2 {
     font-size: 40px; /* Taille du titre */
     font-weight: bold;
-    margin-bottom: 60px; /* Espace sous le titre */
+    margin-bottom: 80px; /* Espace sous le titre */
     text-transform: uppercase; /* Texte en majuscules */
 }
 
@@ -194,7 +194,7 @@ body {
 
 .contact .university {
     flex: 1; /* Chaque colonne prend la même largeur */
-    text-align: left; /* Aligne le texte à gauche */
+    text-align: right; /* Aligne le texte à gauche */
 }
 
 .contact .university h3 {
