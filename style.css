@@ -236,44 +236,54 @@ body {
     font-weight: bold;
     margin-bottom: 20px;
 }
-
-.cv-subsection h3 {
-    font-size: 20px;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #000; /* Ligne fine sous le titre */
-    padding-bottom: 5px;
+/* General Section Styling */
+.section {
+    margin: 40px auto;
+    max-width: 900px;
+    padding: 20px;
 }
 
-.cv-subsection ul {
-    list-style: none;
-    padding: 0;
+.section h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    text-align: left;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
 }
 
-.cv-subsection ul li {
-    margin-bottom: 10px;
+/* Timeline Styling */
+.timeline {
+    margin-top: 20px;
+    border-left: 2px solid #000;
+    padding-left: 20px;
+}
+
+.timeline-item {
     display: flex;
-    gap: 15px;
+    margin-bottom: 20px;
 }
 
-.cv-subsection ul li strong {
-    display: inline-block;
-    width: 150px; /* Colonne fixe pour les dates */
+.timeline-item .date {
+    flex: 0 0 120px; /* Fixed width for dates */
     font-weight: bold;
+    margin-right: 20px;
+    color: #000;
 }
 
-.cv-subsection ul li span {
-    font-style: italic;
+.timeline-item .content {
+    flex: 1; /* Take remaining space */
+}
+
+.timeline-item .content h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.timeline-item .content p {
+    margin: 0;
     font-size: 14px;
-    color: #555;
+    line-height: 1.5;
 }
 
-/* Alignement pour les sections */
-.cv-subsection ul li {
-    text-align: left; /* Texte bien aligné à gauche */
-}
 
-/* Espace entre les blocs */
-.cv-subsection {
-    margin-bottom: 30px;
-}
