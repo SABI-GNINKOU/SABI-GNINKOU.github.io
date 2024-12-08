@@ -56,7 +56,7 @@ body {
 .navbar {
     text-align: center;
     font-family: Arial, sans-serif;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .navbar ul {
     list-style: none;
@@ -90,7 +90,7 @@ body {
     font-size: 32px;
     font-weight: normal;
     color: #333;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 .header p {
     color: #666;
@@ -104,17 +104,17 @@ body {
     font-size: 24px;
     font-weight: bold;
     color: #333;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 15px;
     border-top: none;
-    padding-top: 20px;
+    padding-top: 15px;
     text-align: left;
 }
 
 /* Introduction and Job Opportunities Styling */
 .introduction, .job-opportunities, .research-interests {
     max-width: 800px;
-    margin: 0 auto 30px;
+    margin: 0 auto 20px;
     text-align: left;
     line-height: 1.8;
 }
