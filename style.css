@@ -104,8 +104,8 @@ body {
     font-size: 24px;
     font-weight: bold;
     color: #333;
-    margin-top: 9px;
-    margin-bottom: 7px;
+    margin-top: 5px;
+    margin-bottom: 4px;
     border-top: none;
     padding-top: 10px;
     text-align: left;
@@ -171,7 +171,7 @@ body {
     width: 90vw; /* Largeur pleine */
     height: 1px; /* Épaisseur */
     background-color: #333; /* Couleur */
-    margin: 10px 0; /* Espacement */
+    margin: 7px 0; /* Espacement */
 }
 
 /* Section Contact */
