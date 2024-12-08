@@ -296,10 +296,17 @@ body {
     text-align: left;
 }
 body {
+    margin: 0; /* Supprime les marges par défaut */
+    padding: 0; /* Supprime les espaces par défaut */
+    font-family: 'Cantarell', sans-serif; /* Police principale */
+    /* Propriétés pour l'image de fond */
     background-image: url('fond_image.png'); /* Utilisez le chemin relatif */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+    background-size: contain; /* Ajuste l'image pour qu'elle soit entièrement visible */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    background-position: center center; /* Centre l'image horizontalement et verticalement */
+    background-attachment: fixed; /* L'image reste fixe pendant le défilement */
 }
+
+
+
 
