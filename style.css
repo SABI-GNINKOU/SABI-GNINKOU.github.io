@@ -77,7 +77,7 @@ body {
     text-align: center;
     padding: 40px 20px;
     border-bottom: none #ccc;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 .header img {
     max-width: 120px;
@@ -104,8 +104,8 @@ body {
     font-size: 24px;
     font-weight: bold;
     color: #333;
-    margin-top: 30px;
-    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     border-top: none;
     padding-top: 15px;
     text-align: left;
@@ -163,7 +163,7 @@ body {
     width: 90vw; /* Largeur pleine */
     height: 1px; /* Épaisseur */
     background-color: #333; /* Couleur */
-    margin: 20px 0; /* Espacement */
+    margin: 10px 0; /* Espacement */
 }
 
 /* Ligne dans le footer */
@@ -177,9 +177,9 @@ body {
 /* Section Contact */
 .section {
     text-align: right;
-    margin: 40px auto;
+    margin: 50px auto;
     font-family: Arial, sans-serif;
-    line-height: 1.8; /* Espacement entre les lignes */
+    line-height: 2; /* Espacement entre les lignes */
     max-width: 800px; /* Largeur maximale */
 }
 
@@ -313,6 +313,7 @@ body {
     align-items: center; /* Aligne les images verticalement */
     gap: 20px; /* Espacement entre les images */
     margin-top: 20px; /* Espacement au-dessus du conteneur */
+    margin-bottom:20px;
 }
 
 .logo {
