@@ -295,3 +295,11 @@ body {
 .timeline-item {
     text-align: left;
 }
+body {
+    background-image: url('fond_image.png'); /* Utilisez le chemin relatif */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
