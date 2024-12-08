@@ -56,7 +56,7 @@ body {
 .navbar {
     text-align: center;
     font-family: Arial, sans-serif;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 .navbar ul {
     list-style: none;
@@ -77,13 +77,13 @@ body {
     text-align: center;
     padding: 40px 20px;
     border-bottom: none #ccc;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 .header img {
     max-width: 120px;
     height: auto;
     display: block;
-    margin: 0 auto 20px;
+    margin: 0 auto 10px;
     border-radius: 5px;
 }
 .header h1 {
@@ -104,17 +104,17 @@ body {
     font-size: 24px;
     font-weight: bold;
     color: #333;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 9px;
+    margin-bottom: 7px;
     border-top: none;
-    padding-top: 15px;
+    padding-top: 10px;
     text-align: left;
 }
 
 /* Introduction and Job Opportunities Styling */
 .introduction, .job-opportunities, .research-interests {
     max-width: 800px;
-    margin: 0 auto 20px;
+    margin: 0 auto 10px;
     text-align: left;
     line-height: 1.8;
 }
@@ -128,7 +128,7 @@ body {
 .research-interests ul {
     list-style-type: none;
     padding-left: 0;
-    margin-top: 10px;
+    margin-top: 7px;
     line-height: 1.8;
 }
 .footer {
@@ -163,7 +163,7 @@ body {
     width: 90vw; /* Largeur pleine */
     height: 1px; /* Épaisseur */
     background-color: #333; /* Couleur */
-    margin: 10px 0; /* Espacement */
+    margin: 7px 0; /* Espacement */
 }
 
 /* Ligne dans le footer */
@@ -186,7 +186,7 @@ body {
 .section h2 {
     font-size: 40px; /* Taille du titre */
     font-weight: bold;
-    margin-bottom: 80px; /* Espace sous le titre */
+    margin-bottom: 50px; /* Espace sous le titre */
     text-transform: uppercase; /* Texte en majuscules */
 }
 
