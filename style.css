@@ -307,6 +307,18 @@ body {
     background-attachment: fixed; /* L'image reste fixe pendant le défilement */
 }
 
+.logos-container {
+    display: flex; /* Utilise flexbox pour aligner les éléments */
+    justify-content: center; /* Centre les images horizontalement */
+    align-items: center; /* Aligne les images verticalement */
+    gap: 20px; /* Espacement entre les images */
+    margin-top: 20px; /* Espacement au-dessus du conteneur */
+}
+
+.logo {
+    max-width: 200px; /* Limite la largeur de chaque image */
+    height: auto; /* Conserve les proportions des images */
+}
 
 
 
