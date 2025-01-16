@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="fr">
 
 <head>
@@ -9,138 +9,201 @@
     <link href="https://fonts.googleapis.com/css2?family=Cantarell:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-
-<body>
     <!-- Navigation bar -->
     <nav class="navbar">
         <ul>
-            <li><a href="#home" onclick="showSection('home')"><i class="fas fa-home"></i> Home</a></li>
-            <li><a href="#about" onclick="showSection('about')"><i class="fas fa-user"></i> About</a></li>
-            <li><a href="#research" onclick="showSection('research')"><i class="fas fa-flask"></i> Research</a></li>
-            <li><a href="#cv" onclick="showSection('cv')"><i class="fas fa-file-alt"></i> CV</a></li>
-            <li><a href="#contact" onclick="showSection('contact')"><i class="fas fa-envelope"></i> Contact</a></li>
+            <li><a href="#home" onclick="showSection('home')">Home</a></li>
+            <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
+            <li><a href="#cv" onclick="showSection('cv')">CV</a></li>
+            <li><a href="#research" onclick="showSection('research')">Research&Teaching    </a></li>
+            <li><a href="#team" onclick="showSection('team')">Team</a></li>
+            
         </ul>
     </nav>
+    <!-- Home Section -->
+    <section id="home" class="section">  
+<header class="header">
+    <img src="SABI_GNINKOU_Razak_HD.png" alt="Image of Razak Christophe Sabi Gninkou" class="profile-image">
+    <h1>SABI GNINKOU Razak Christophe</h1>
+    <p> PhD Student in Applied Mathematics|  Machine Learning|Uncertainty Quantification|Simulation & Optimization|Modeling complex mechanical computer
+codes </p>
+    <p>Université Polytechnique Hauts-de-France (UPHF) and Ecole Des Mines de Sainte-Etienne (EMSE) <p>
+          <div class="logos-container">
+                 <img src="th.jpeg" alt="Logo UPHF" class="logo">
+    <img src="emse.jpeg" alt="Logo EMSE" class="logo">
 
-    <!-- Sections -->
-    <section id="home" class="section">
-        <header class="header">
-            <img src="SABI_GNINKOU_Razak_HD.png" alt="Razak Christophe Sabi Gninkou" class="profile-image">
-            <h1>SABI GNINKOU Razak Christophe</h1>
-            <p>
-                PhD Student in Applied Mathematics | Machine Learning | Uncertainty Quantification | Simulation & Optimization
-            </p>
-            <div class="logos-container">
-                <img src="th.jpeg" alt="Logo UPHF" class="logo">
-                <img src="emse.jpeg" alt="Logo EMSE" class="logo">
+</div>
+
+</header>  
+  <!-- Main Content -->
+            <!-- About Me Section -->
+        <div class="research-interests">
+            <div class="about-me">
+                <h2>About Me</h2>
+                <p>
+    Welcome to my personal website! I am a <strong>PhD candidate in Applied Mathematics</strong> with a specialization in Machine Learning at the 
+    <a href="https://www.uphf.fr/" target="_blank">Université Polytechnique Hauts-de-France (UPHF)</a>, in collaboration with the 
+    <a href="https://www.mines-stetienne.fr/" target="_blank">École des Mines de Saint-Étienne (EMSE)</a>.
+</p>
+<p>
+    My research lies at the intersection of <a href="research.html">applied mathematics</a> and 
+    <a href="research.html">machine learning</a>, where I focus on developing innovative probabilistic and algorithmic approaches to model and analyze 
+    <a href="phd-infos.html">complex mechanical systems</a>.
+</p>
+<p>
+    This work aims to bridge theoretical advancements and practical applications, contributing to cutting-edge solutions in 
+    <a href="research.html#simulation">simulation</a>, <a href="research.html#optimization">optimization</a>, and 
+    <a href="research.html#uncertainty">uncertainty quantification</a> for mechanical and computational models.
+</p>
+
             </div>
-        </header>
-    </section>
-
-    <section id="about" class="section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>
-                Welcome to my personal website! I am a <strong>PhD candidate in Applied Mathematics</strong> with a specialization in Machine Learning at
-                <a href="https://www.uphf.fr/" target="_blank">Université Polytechnique Hauts-de-France (UPHF)</a>, in collaboration with
-                <a href="https://www.mines-stetienne.fr/" target="_blank">École des Mines de Saint-Étienne (EMSE)</a>.
-            </p>
-            <p>
-                My research focuses on <a href="#research">probabilistic modeling</a>, 
-                <a href="#simulation">simulation</a>, 
-                and <a href="#optimization">optimization</a> of mechanical systems.
-            </p>
-            <h3>PhD Thesis Information</h3>
-            <p><strong>Topic:</strong> Gaussian Process Modeling of Mechanical Random Fields: A Comprehensive Study from Simulation to Identification</p>
-            <p><strong>Supervisors:</strong> 
-                <a href="https://www.uphf.fr/ceramaths/membres/boubacarmainassara_yacouba">Yacouba Boubacar Maïnassara</a>, 
-                <a href="https://www.emse.fr/~leriche/">Rodolphe Le Riche</a>, 
-                <a href="https://anfelopera.github.io/">Andres Lopez-Lopera</a>, 
-                <a href="https://www.uphf.fr/lamih/membres/massa_franck">Franck Massa</a>, 
-                and <a href="https://www.uphf.fr/ceramaths/membres/reding_lucas">Lucas Reding</a>.
-            </p>
-            <p><strong>Funding:</strong> Supported by the <a href="https://anfelopera.github.io/funding/GAME/">ANR JCJC GAME</a> program.</p>
+            <!-- PhD Thesis Section -->
+            <div class="research-interests">
+                <h2>PhD Thesis Information</h2>
+                <p><strong>Topic:</strong> Gaussian Process Modeling of Mechanical Random Fields: A Comprehensive Study from Simulation to Identification</p>
+                <p><strong>Supervisors:</strong> I am working under the supervision of <a href="https://www.uphf.fr/ceramaths/membres/boubacarmainassara_yacouba">Yacouba Boubacar Maïnassara</a>, <a href="https://www.emse.fr/~leriche/">Rodolphe Le Riche</a>, <a href="https://anfelopera.github.io/">Andres Lopez-Lopera</a>, <a href="https://www.uphf.fr/lamih/membres/massa_franck">Franck Massa</a>, and <a href="https://www.uphf.fr/ceramaths/membres/reding_lucas">Lucas Reding</a>.</p>
+                <p><strong>Funding:</strong> Supported by the <a href="https://anfelopera.github.io/funding/GAME/">ANR JCJC GAME</a> program.</p>
+            </div>
         </div>
-    </section>
 
-    <section id="research" class="section">
-        <div class="container">
+        <!-- Research Interests Section -->
+        <div class="research-interests">
             <h2>Research Interests</h2>
-            <ul>
-                <li>Machine learning and deep learning</li>
-                <li>Bayesian inference and MCMC methods</li>
-                <li>Variational Inference</li>
-                <li>Probabilistic modeling of mechanical random fields</li>
-                <li>Simulation and structural identification</li>
-            </ul>
+            <li>Machine learning and deep learning .</li>
+                 <li>Bayesian inference and MCMC methods .</li>
+               <li> Variational Inference  .</li>
+                   <li>Probabilistic modeling of mechanical random fields .</li>
+                <li>Simulation and structural identification .</li>     
         </div>
     </section>
+<section id="contact" class="section">
+    <h2>Contact</h2>
+    <div class="contact-details">
+        <!-- Université Polytechnique Hauts-de-France -->
+        <div class="university">
+            <h3>Université Polytechnique Hauts-de-France</h3>
+            <p>Campus Mont Houy<br>
+            Rue du Président Deschanel<br>
+            59313 Valenciennes Cedex 9, France</p>
+        </div>
 
+       
+    </div>
+
+    <!-- Liens de contact -->
+    <div class="email">
+        <p>Email: razsabigninchrist@gmail.com</p>
+        <p>Email: sabigninkou.razakchristophe@imsp-uac.org</p>
+        <p>LinkedIn: <a href="https://bj.linkedin.com/in/razak-christophe-sabi-gninkou-b12047251" target="_blank">linkedin.com/in/razak-christophe-sabi-gninkou</a></p>
+        <p>GitHub: <a href="https://github.com/SABI-GNINKOU" target="_blank">github.com/SABI-GNINKOU</a></p>
+        <p>ResearchGate: <a href="https://www.researchgate.net/" target="_blank">researchgate.net/your-profile</a></p>
+    </div>
+</section>
     <section id="cv" class="section">
-        <div class="container">
-            <h2>Curriculum Vitae</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="date">2024 - Present</div>
-                    <div class="content">
-                        <h4>PhD in Applied Mathematics</h4>
-                        <p><strong>Université Polytechnique Hauts-de-France</strong> and <strong>École des Mines de Saint-Étienne</strong></p>
-                        <p>Research focus: Development of advanced probabilistic and algorithmic methods for modeling complex mechanical systems.</p>
-                    </div>
+    <h2>Curriculum Vitae</h2>
+    
+    <!-- Academic Background -->
+    <div class="cv-subsection">
+        <h2>Academic Background</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="date">2024 - Present</div>
+                <div class="content">
+                    <h4>Université Polytechnique Hauts-de-France and École des Mines de Saint-Étienne (EMSE). </h4>
+                    <p>PhD in Applied Mathematics (Machine Learning Specialization)</p>
+                    <p>Research focus: Development of advanced probabilistic and algorithmic methods for modeling complex mechanical systems.</p>
                 </div>
-                <div class="timeline-item">
-                    <div class="date">2023 - 2024</div>
-                    <div class="content">
-                        <h4>Master's in Statistics and Machine Learning</h4>
-                        <p><strong>Sorbonne University</strong></p>
-                        <p>Specialization: Mathematical statistics, machine learning, and data science.</p>
-                    </div>
+            </div>
+            <div class="timeline-item">
+                <div class="date">2023 - 2024</div>
+                <div class="content">
+                    <h4>Sorbonne University, Paris</h4>
+                    <p>Master's in Statistics and Machine Learning (PGSM Scholarship recipient of FSMP).</p>
+                    <p>Specialization: Mathematical statistics, machine learning, and data science.</p>
                 </div>
-                <div class="timeline-item">
-                    <div class="date">2021 - 2023</div>
-                    <div class="content">
-                        <h4>Master's in Statistics-Probability</h4>
-                        <p><strong>Institut des Mathématiques et des Sciences Physiques (IMSP), Benin</strong></p>
-                        <p>Research-oriented program with CEASMA Scholarship. Developed expertise in statistical techniques and Bayesian methods.</p>
-                    </div>
+            </div>
+            <div class="timeline-item">
+                <div class="date">2021 - 2023</div>
+                <div class="content">
+                    <h4>Institut des Mathématiques et des Sciences Physiques (IMSP), Benin.</h4>
+                    <p>Master's in Statistics-Probability</p>
+                    <p>Research-oriented program with CEASMA Scholarship. Developed expertise in statistical techniques and Bayesian methods.</p>
                 </div>
-                <div class="timeline-item">
-                    <div class="date">2017 - 2020</div>
-                    <div class="content">
-                        <h4>Bachelor's in Mathematics, Computer Science, and Applications</h4>
-                        <p><strong>Université Nationale des Sciences, Technologies, Ingénieries et Mathématiques (UNSTIM), Benin</strong></p>
-                        <p>Acquired foundational skills in programming, statistics, and numerical optimization.</p>
-                    </div>
+            </div>
+            <div class="timeline-item">
+                <div class="date">2017 - 2020</div>
+                <div class="content">
+                    <h4>Bachelor's in Mathematics, Computer Science, and Applications</h4>
+                    <p>Université Nationale des Sciences, Technologies, Ingénieries et Mathématiques (UNSTIM), Benin.</p>
+                    <p>Acquired foundational skills in programming, statistics, and numerical optimization.</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:razsabigninchrist@gmail.com">razsabigninchrist@gmail.com</a></p>
-            <p>Email: <a href="mailto:sabigninkou.razakchristophe@imsp-uac.org">sabigninkou.razakchristophe@imsp-uac.org</a></p>
-            <p>LinkedIn: <a href="https://bj.linkedin.com/in/razak-christophe-sabi-gninkou-b12047251">linkedin.com/in/razak-christophe-sabi-gninkou</a></p>
-            <p>GitHub: <a href="https://github.com/SABI-GNINKOU">github.com/SABI-GNINKOU</a></p>
+    <!-- Professional Experience -->
+    <div class="cv-subsection">
+        <h2>Professional Background</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="date">2024 (Avril-0ctobre)</div>
+                <div class="content">
+                    <h4>Six-month Academic Internship</h4>
+                    <p><strong>Organization:</strong> EDF Systems Department, Paris Saclay</p>
+                    <p><strong>Focus:</strong> Bayesian inference for estimating reliability parameters of electrical equipment using MCMC methods to analyze Weibull models with censored data.</p>
+                    <p>Delivered Python algorithms for automating analyses and authored detailed reports.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="date">2023 (Avril-Sept)</div>
+                <div class="content">
+                    <h4>Research Internship in Time Series Analysis</h4>
+                    <p><strong>Organization:</strong> IMSP, Benin</p>
+                    <p>Focused on integer-valued time series analysis with heteroscedasticity and periodicity. Enhanced forecasting accuracy by addressing seasonality and complex data structures.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="date">2022 (Août-Octobre)</div>
+                <div class="content">
+                    <h4>Research Internship in Multivarite Analysis</h4>
+                    <p><strong>Organization:</strong> CERFIG, Conakry, Guinee</p>
+             </div>
+            </div>
         </div>
-    </section>
+    </div>
+
+    
+            <div class="timeline-item">
+                <div class="date">2021 - 2023</div>
+                <div class="content">
+                    <h4>Workshop Leader</h4>
+                    <p><strong>Institution:</strong> IMSP, Benin</p>
+                    <p>Conducted Python and R workshops, focusing on practical programming skills and data analysis techniques.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
 
     <!-- JavaScript for Navigation -->
     <script>
         function showSection(sectionId) {
+            // Hide all sections
             const sections = document.querySelectorAll('.section');
             sections.forEach(section => {
                 section.style.display = 'none';
             });
+
+            // Show the selected section
             document.getElementById(sectionId).style.display = 'block';
         }
 
+        // Show the "home" section by default on load
         document.addEventListener("DOMContentLoaded", function() {
             showSection('home');
         });
     </script>
-
     <!-- Footer -->
     <footer class="footer">
         <p>© 2024 SABI GNINKOU Razak Christophe</p>
