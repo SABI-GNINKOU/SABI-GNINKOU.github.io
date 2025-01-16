@@ -14,15 +14,15 @@
     <!-- Navigation bar -->
     <nav class="navbar">
         <ul>
-            <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
-            <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
-            <li><a href="#research"><i class="fas fa-flask"></i> Research</a></li>
-            <li><a href="#cv"><i class="fas fa-file-alt"></i> CV</a></li>
-            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            <li><a href="#home" onclick="showSection('home')"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#about" onclick="showSection('about')"><i class="fas fa-user"></i> About</a></li>
+            <li><a href="#research" onclick="showSection('research')"><i class="fas fa-flask"></i> Research</a></li>
+            <li><a href="#cv" onclick="showSection('cv')"><i class="fas fa-file-alt"></i> CV</a></li>
+            <li><a href="#contact" onclick="showSection('contact')"><i class="fas fa-envelope"></i> Contact</a></li>
         </ul>
     </nav>
 
-    <!-- Home Section -->
+    <!-- Sections -->
     <section id="home" class="section">
         <header class="header">
             <img src="SABI_GNINKOU_Razak_HD.png" alt="Razak Christophe Sabi Gninkou" class="profile-image">
@@ -37,7 +37,6 @@
         </header>
     </section>
 
-    <!-- About Me Section -->
     <section id="about" class="section">
         <div class="container">
             <h2>About Me</h2>
@@ -51,10 +50,19 @@
                 <a href="#simulation">simulation</a>, 
                 and <a href="#optimization">optimization</a> of mechanical systems.
             </p>
+            <h3>PhD Thesis Information</h3>
+            <p><strong>Topic:</strong> Gaussian Process Modeling of Mechanical Random Fields: A Comprehensive Study from Simulation to Identification</p>
+            <p><strong>Supervisors:</strong> 
+                <a href="https://www.uphf.fr/ceramaths/membres/boubacarmainassara_yacouba">Yacouba Boubacar Maïnassara</a>, 
+                <a href="https://www.emse.fr/~leriche/">Rodolphe Le Riche</a>, 
+                <a href="https://anfelopera.github.io/">Andres Lopez-Lopera</a>, 
+                <a href="https://www.uphf.fr/lamih/membres/massa_franck">Franck Massa</a>, 
+                and <a href="https://www.uphf.fr/ceramaths/membres/reding_lucas">Lucas Reding</a>.
+            </p>
+            <p><strong>Funding:</strong> Supported by the <a href="https://anfelopera.github.io/funding/GAME/">ANR JCJC GAME</a> program.</p>
         </div>
     </section>
 
-    <!-- Research Interests Section -->
     <section id="research" class="section">
         <div class="container">
             <h2>Research Interests</h2>
@@ -68,28 +76,46 @@
         </div>
     </section>
 
-    <!-- CV Section -->
     <section id="cv" class="section">
         <div class="container">
             <h2>Curriculum Vitae</h2>
             <div class="timeline">
                 <div class="timeline-item">
-                    <h4>PhD in Applied Mathematics</h4>
-                    <p><strong>Université Polytechnique Hauts-de-France</strong> and <strong>École des Mines de Saint-Étienne</strong>, 2024-Present</p>
+                    <div class="date">2024 - Present</div>
+                    <div class="content">
+                        <h4>PhD in Applied Mathematics</h4>
+                        <p><strong>Université Polytechnique Hauts-de-France</strong> and <strong>École des Mines de Saint-Étienne</strong></p>
+                        <p>Research focus: Development of advanced probabilistic and algorithmic methods for modeling complex mechanical systems.</p>
+                    </div>
                 </div>
                 <div class="timeline-item">
-                    <h4>Master's in Statistics and Machine Learning</h4>
-                    <p><strong>Sorbonne University</strong>, 2023-2024 (PGSM Scholarship)</p>
+                    <div class="date">2023 - 2024</div>
+                    <div class="content">
+                        <h4>Master's in Statistics and Machine Learning</h4>
+                        <p><strong>Sorbonne University</strong></p>
+                        <p>Specialization: Mathematical statistics, machine learning, and data science.</p>
+                    </div>
                 </div>
                 <div class="timeline-item">
-                    <h4>Master's in Statistics-Probability</h4>
-                    <p><strong>Institut des Mathématiques et des Sciences Physiques (IMSP)</strong>, 2021-2023</p>
+                    <div class="date">2021 - 2023</div>
+                    <div class="content">
+                        <h4>Master's in Statistics-Probability</h4>
+                        <p><strong>Institut des Mathématiques et des Sciences Physiques (IMSP), Benin</strong></p>
+                        <p>Research-oriented program with CEASMA Scholarship. Developed expertise in statistical techniques and Bayesian methods.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="date">2017 - 2020</div>
+                    <div class="content">
+                        <h4>Bachelor's in Mathematics, Computer Science, and Applications</h4>
+                        <p><strong>Université Nationale des Sciences, Technologies, Ingénieries et Mathématiques (UNSTIM), Benin</strong></p>
+                        <p>Acquired foundational skills in programming, statistics, and numerical optimization.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="section">
         <div class="container">
             <h2>Contact</h2>
@@ -99,6 +125,21 @@
             <p>GitHub: <a href="https://github.com/SABI-GNINKOU">github.com/SABI-GNINKOU</a></p>
         </div>
     </section>
+
+    <!-- JavaScript for Navigation -->
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            showSection('home');
+        });
+    </script>
 
     <!-- Footer -->
     <footer class="footer">
