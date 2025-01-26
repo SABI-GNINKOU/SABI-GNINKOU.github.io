@@ -1,42 +1,48 @@
-
-
-
 /* Global reset */
-* { margin: 0;
-padding: 0; 
-border: 0;
-background: transparent;
-
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
 }
+
+/* Styles de texte spécifiques */
 .section_title h2,
 .services .services_list h3,
 .cta .cta_title,
 footer .footer_links .columns_title {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Playfair Display', serif; /* Police attrayante pour les titres */
     font-weight: 700;
 }
 
+/* Styles des liens */
 a {
-    color: #454545; /* Couleur des liens */
+    color: #0051a3; /* Couleur bleue pour les liens cliquables */
     background: transparent;
+    text-decoration: none; /* Supprime le soulignement par défaut */
+    font-weight: bold; /* Met en évidence les liens */
 }
+
+a:hover {
+    text-decoration: underline; /* Soulignement au survol */
+}
+
+/* Styles pour les éléments de texte */
 mark {
-
-
-
-
     background-color: #ff9;
     color: #000;
     font-style: italic;
     font-weight: bold;
 }
+
 del {
     text-decoration: line-through;
 }
+
 hr {
     display: block;
     height: 1px;
-    border: 0;   
+    border: 0;
     border-top: 1px solid #cccccc;
     margin: 1em 0;
     padding: 0;
@@ -44,9 +50,10 @@ hr {
 
 /* Body Styling */
 body {
-    font-family: 'Cantarell', sans-serif; /* Définit Cantarell comme police principale */
-    background-color: #ffffff; /* Arrière-plan blanc */
-    color: #333; /* Texte en gris foncé */
+    font-family: 'Poppins', sans-serif; /* Police attrayante pour le texte */
+    font-size: 14px; /* Taille de police réduite */
+    background-color: #ffffff;
+    color: #333;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -55,43 +62,49 @@ body {
 /* Navbar Styles */
 .navbar {
     text-align: center;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin-top: 5px;
 }
+
 .navbar ul {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 20px; /* Espacement réduit entre les éléments */
 }
+
 .navbar ul li a {
     text-decoration: none;
     color: #333;
     font-size: 16px;
 }
+
 .navbar ul li a:hover {
-    color: #0051a3;
+    color: #0051a3; /* Couleur bleue au survol */
 }
 
 /* Header Styles */
 .header {
     text-align: center;
-    padding: 40px 20px;
+    padding: 20px 20px; /* Espacement réduit */
     border-bottom: none #ccc;
     margin-bottom: 5px;
 }
+
 .header img {
-    max-width: 120px;
+    max-width: 250px; /* Taille de la photo augmentée */
     height: auto;
     display: block;
     margin: 0 auto 10px;
     border-radius: 5px;
 }
+
 .header h1 {
     font-size: 32px;
     font-weight: normal;
     color: #333;
     margin: 5px 0;
 }
+
 .header p {
     color: #666;
     font-size: 18px;
@@ -101,25 +114,29 @@ body {
 
 /* Section Title Styling */
 .section h2 {
-    font-size: 24px;
+    font-size: 26px; /* Taille de police augmentée */
+    font-family: 'Playfair Display', serif; /* Police attrayante pour les titres */
     font-weight: bold;
     color: #333;
-    margin-top: 5px;
-    margin-bottom: 4px;
+    margin-top: 10px; /* Espacement réduit */
+    margin-bottom: 10px; /* Espacement réduit */
     border-top: none;
     padding-top: 10px;
     text-align: left;
 }
 
 /* Introduction and Job Opportunities Styling */
-.introduction, .job-opportunities, .research-interests {
+.introduction,
+.job-opportunities,
+.research-interests {
     max-width: 800px;
-    margin: 0 auto 10px;
+    margin: 0 auto 10px; /* Espacement réduit */
     text-align: left;
-    line-height: 1.8;
+    line-height: 1.6; /* Espacement entre les lignes réduit */
 }
 
-.job-opportunities h2, .job-opportunities p {
+.job-opportunities h2,
+.job-opportunities p {
     color: red;
     font-weight: bold;
 }
@@ -128,99 +145,82 @@ body {
 .research-interests ul {
     list-style-type: none;
     padding-left: 0;
-    margin-top: 7px;
-    line-height: 1.8;
+    margin-top: 5px; /* Espacement réduit */
+    line-height: 1.6; /* Espacement entre les lignes réduit */
 }
-.footer {
-    text-align: center; /* Centre le contenu */
-    font-family: Arial, sans-serif; /* Police lisible */
-    font-size: 14px; /* Taille de police */
-    color: #333; /* Couleur du texte */
-    padding: 10px 0; /* Espacement autour */
-}
-
-.footer hr {
-    width: 80%; /* Largeur de la ligne */
-    margin: 0 auto 10px; /* Centrage et espacement sous la ligne */
-    border: none; /* Supprime les bordures par défaut */
-    border-top: none; /* Ligne fine noire */
-}
-
 
 .research-list li {
     font-size: 16px;
     color: #333;
 }
 
-
-
 .research-list li strong {
-    color: #0051a3;
+    color: #0051a3; /* Couleur bleue pour les éléments en gras */
 }
 
-/* Ligne sous l'image dans le header */
-.header .line {
-    width: 90vw; /* Largeur pleine */
-    height: 1px; /* Épaisseur */
-    background-color: #333; /* Couleur */
-    margin: 7px 0; /* Espacement */
+/* Footer Styles */
+.footer {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #333;
+    padding: 10px 0;
 }
 
-/* Ligne dans le footer */
-.footer .line {
-    width: 90vw; /* Largeur pleine */
-    height: 1px; /* Épaisseur */
-    background-color: #333; /* Couleur */
-    margin: 7px 0; /* Espacement */
+.footer hr {
+    width: 80%;
+    margin: 0 auto 10px;
+    border: none;
+    border-top: 1px solid #cccccc; /* Ligne fine grise */
 }
 
 /* Section Contact */
 .section {
     text-align: right;
-    margin: 50px auto;
-    font-family: Arial, sans-serif;
-    line-height: 2; /* Espacement entre les lignes */
-    max-width: 800px; /* Largeur maximale */
+    margin: 30px auto; /* Espacement réduit */
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6; /* Espacement entre les lignes réduit */
+    max-width: 800px;
 }
 
 .section h2 {
-    font-size: 40px; /* Taille du titre */
+    font-size: 40px;
     font-weight: bold;
-    margin-bottom: 50px; /* Espace sous le titre */
-    text-transform: uppercase; /* Texte en majuscules */
+    margin-bottom: 30px; /* Espacement réduit */
+    text-transform: uppercase;
 }
 
 .contact .contact-details {
     display: flex;
-    justify-content: space-between; /* Sépare les universités */
-    gap: 40px; /* Espace entre les colonnes */
-    margin-bottom: 40px;
+    justify-content: space-between;
+    gap: 20px; /* Espacement réduit */
+    margin-bottom: 20px; /* Espacement réduit */
 }
 
 .contact .university {
-    flex: 1; /* Chaque colonne prend la même largeur */
-    text-align: right; /* Aligne le texte à gauche */
+    flex: 1;
+    text-align: right;
 }
 
 .contact .university h3 {
-    font-size: 25px; /* Taille des sous-titres */
+    font-size: 25px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
 .contact .email {
-    font-size: 14px; /* Taille du texte des emails */
+    font-size: 14px;
     color: #333;
-    text-align: left; /* Aligne les emails à gauche */
+    text-align: left;
 }
 
 .contact .email p {
-    margin: 5px 0; /* Espacement entre les éléments */
+    margin: 5px 0;
 }
 
 .contact .email a {
-    color: #0051a3; /* Couleur des liens */
-    text-decoration: none; /* Supprime le soulignement par défaut */
+    color: #0051a3; /* Couleur bleue pour les liens */
+    text-decoration: none;
 }
 
 .contact .email a:hover {
@@ -229,9 +229,9 @@ body {
 
 /* Section CV */
 .section {
-    margin: 40px auto;
+    margin: 30px auto; /* Espacement réduit */
     max-width: 800px;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #000;
 }
 
@@ -239,44 +239,30 @@ body {
     font-size: 28px;
     text-align: center;
     font-weight: bold;
-    margin-bottom: 20px;
-}
-/* General Section Styling */
-.section {
-    margin: 40px auto;
-    max-width: 900px;
-    padding: 20px;
-}
-
-.section h2 {
-    font-size: 26px;
-    margin-bottom: 20px;
-    text-align: center;
-    border-bottom: 2px solid #000;
-    padding-bottom: 10px;
+    margin-bottom: 15px; /* Espacement réduit */
 }
 
 /* Timeline Styling */
 .timeline {
-    margin-top: 20px;
+    margin-top: 15px; /* Espacement réduit */
     border-left: 2px solid #000;
     padding-left: 20px;
 }
 
 .timeline-item {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 15px; /* Espacement réduit */
 }
 
 .timeline-item .date {
-    flex: 0 0 120px; /* Fixed width for dates */
+    flex: 0 0 120px;
     font-weight: bold;
     margin-right: 20px;
     color: #000;
 }
 
 .timeline-item .content {
-    flex: 1; /* Take remaining space */
+    flex: 1;
 }
 
 .timeline-item .content h4 {
@@ -291,35 +277,17 @@ body {
     line-height: 1.5;
 }
 
-
-.timeline-item {
-    text-align: left;
-}
-body {
-    margin: 0; /* Supprime les marges par défaut */
-    padding: 0; /* Supprime les espaces par défaut */
-    font-family: 'Cantarell', sans-serif; /* Police principale */
-    /* Propriétés pour l'image de fond */
-    background-image: url('fond_image.png'); /* Utilisez le chemin relatif */
-    background-size: contain; /* Ajuste l'image pour qu'elle soit entièrement visible */
-    background-repeat: no-repeat; /* Empêche la répétition de l'image */
-    background-position: center center; /* Centre l'image horizontalement et verticalement */
-    background-attachment: fixed; /* L'image reste fixe pendant le défilement */
-}
-
+/* Logos Styles */
 .logos-container {
-    display: flex; /* Utilise flexbox pour aligner les éléments */
-    justify-content: center; /* Centre les images horizontalement */
-    align-items: center; /* Aligne les images verticalement */
-    gap: 20px; /* Espacement entre les images */
-    margin-top: 20px; /* Espacement au-dessus du conteneur */
-    margin-bottom:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espacement réduit */
+    margin-top: 15px; /* Espacement réduit */
+    margin-bottom: 15px; /* Espacement réduit */
 }
 
 .logo {
-    max-width: 300px; /* Limite la largeur de chaque image */
-    height: auto; /* Conserve les proportions des images */
+    max-width: 400px; /* Taille des logos augmentée */
+    height: auto;
 }
-
-
-
