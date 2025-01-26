@@ -140,7 +140,53 @@ body {
     color: red;
     font-weight: bold;
 }
+/* Research Interests Section Styling */
+.research-interests {
+    max-width: 800px;
+    margin: 20px auto; /* Espacement ajusté */
+    padding: 20px;
+    background-color: #f9f9f9; /* Fond léger pour mettre en valeur */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
 
+.research-interests h2 {
+    font-size: 26px;
+    font-family: 'Playfair Display', serif; /* Police attrayante */
+    font-weight: bold;
+    color: #0051a3; /* Couleur bleue pour le titre */
+    margin-bottom: 15px; /* Espacement sous le titre */
+    text-align: center; /* Centrer le titre */
+}
+
+.research-list {
+    list-style-type: none; /* Supprimer les puces */
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.research-list li {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px; /* Espacement entre les éléments */
+    line-height: 1.6; /* Espacement entre les lignes */
+    padding-left: 20px; /* Alignement du texte */
+    position: relative;
+}
+
+.research-list li::before {
+    content: "•"; /* Ajouter un point personnalisé */
+    color: #0051a3; /* Couleur bleue */
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.research-list li strong {
+    color: #0051a3; /* Couleur bleue pour les mots-clés */
+    font-weight: bold;
+}
 /* Research Interests List Styling */
 .research-interests ul {
     list-style-type: none;
