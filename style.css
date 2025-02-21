@@ -390,9 +390,15 @@ section h2 {
     margin-bottom: 15px;
 }
 
-#certifications {
-    display: none !important;
+
+.section {
+    display: none; /* Masquer toutes les sections par défaut */
 }
+
+.section.active {
+    display: block; /* Afficher la section active */
+}
+
 
 /* Liste des certifications */
 section ul {
