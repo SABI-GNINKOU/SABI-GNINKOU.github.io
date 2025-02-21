@@ -391,13 +391,6 @@ section h2 {
 }
 
 
-.section {
-    display: none; /* Masquer toutes les sections par défaut */
-}
-
-.section.active {
-    display: block; /* Afficher la section active */
-}
 
 
 /* Liste des certifications */
