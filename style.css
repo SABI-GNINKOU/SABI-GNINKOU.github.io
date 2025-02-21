@@ -389,6 +389,9 @@ section h2 {
     padding-bottom: 8px;
     margin-bottom: 15px;
 }
+#certifications {
+    display: none !important;
+}
 
 /* Liste des certifications */
 section ul {
