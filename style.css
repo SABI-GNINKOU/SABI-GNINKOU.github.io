@@ -337,3 +337,64 @@ body {
     max-width: 400px; /* Taille des logos augmentée */
     height: auto;
 }
+
+/* Liste des certifications */
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    background: #f4f4f4;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+section ul li:hover {
+    transform: scale(1.02);
+}
+
+/* Liens de vérification et PDF */
+section ul li a {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+section ul li a:first-of-type {
+    background: #1abc9c;
+    color: white;
+    margin-right: 10px;
+}
+
+section ul li a:first-of-type:hover {
+    background: #16a085;
+}
+
+section ul li a:last-of-type {
+    background: #e74c3c;
+    color: white;
+}
+
+section ul li a:last-of-type:hover {
+    background: #c0392b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section {
+        width: 90%;
+        padding: 15px;
+    }
+}
