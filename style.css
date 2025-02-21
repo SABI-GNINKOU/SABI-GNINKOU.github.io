@@ -358,6 +358,21 @@ section ul li:hover {
 }
 
 /* Liens de vérification et PDF */
+
+/* Add spacing between certification items */
+section ul li {
+    background: #f9f9f9;
+    margin: 15px 0; /* Increased margin */
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+section ul li:hover {
+    transform: scale(1.02);
+}
+
 section ul li a {
     display: inline-block;
     margin-top: 5px;
