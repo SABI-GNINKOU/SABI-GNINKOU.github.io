@@ -267,28 +267,27 @@
   
 
 
+    
+    
     <!-- JavaScript for Navigation -->
     <script>
-    function showSection(sectionId) {
-        // Hide all sections
-        const sections = document.querySelectorAll("section"); // Sélectionne toutes les sections
-        sections.forEach(section => {
-            section.style.display = "none"; // Cache toutes les sections
-        });
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
 
-        // Show the selected section
-        const selectedSection = document.getElementById(sectionId);
-        if (selectedSection) {
-            selectedSection.style.display = "block"; // Affiche uniquement la section demandée
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block';
         }
-    }
 
-    // Show the "home" section by default on load
-    document.addEventListener("DOMContentLoaded", function() {
-        showSection('home');
-    });
-</script>
-
+        // Show the "home" section by default on load
+        document.addEventListener("DOMContentLoaded", function() {
+            showSection('home');
+        });
+    </script>
+    
     
     <!-- Footer -->
     <footer class="footer">
