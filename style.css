@@ -6,105 +6,40 @@
     background: transparent;
 }
 
-/* Styles de texte spécifiques */
-.section_title h2,
-.services .services_list h3,
-.cta .cta_title,
-footer .footer_links .columns_title {
-    font-family: 'Playfair Display', serif; /* Police attrayante pour les titres */
-    font-weight: 700;
-}
-
-/* Styles des liens */
-a {
-    color: #0051a3; /* Couleur bleue pour les liens cliquables */
-    background: transparent;
-    text-decoration: none; /* Supprime le soulignement par défaut */
-    font-weight: bold; /* Met en évidence les liens */
-}
-
-a:hover {
-    text-decoration: underline; /* Soulignement au survol */
-}
-
-/* Styles pour les éléments de texte */
-mark {
-    background-color: #ff9;
-    color: #000;
-    font-style: italic;
-    font-weight: bold;
-}
-
-del {
-    text-decoration: line-through;
-}
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #cccccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-/* Body Styling */
+/* Corps du site */
 body {
-    font-family: 'Poppins', sans-serif; /* Police attrayante pour le texte */
-    font-size: 14px; /* Taille de police réduite */
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
     background-color: #ffffff;
     color: #333;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100vw;
+    overflow-x: hidden; /* Empêcher le défilement horizontal */
 }
 
-/* Navbar Styles */
-.navbar {
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    margin-top: 5px;
-}
-
-.navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 20px; /* Espacement réduit entre les éléments */
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
-}
-
-.navbar ul li a:hover {
-    color: #0051a3; /* Couleur bleue au survol */
-}
-
-/* Header Styles */
-
+/* Header - En-tête avec photo */
 .header {
-    width: 100vw; /* Occuper toute la largeur de l'écran */
-    height: 100vh; /* Occuper toute la hauteur de l'écran */
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centrage vertical */
-    align-items: center; /* Centrage horizontal */
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    background: #f5f5f5; /* Couleur de fond, modifiable selon tes préférences */
-    padding: 20px;
+    background-color: #f5f5f5;
 }
 
 .header img {
-    max-width: 200px; /* Ajuste la taille de la photo */
+    max-width: 200px;
     height: auto;
-    border-radius: 50%; /* Arrondi l'image si souhaité */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .header h1 {
-    font-size: 40px; /* Augmenter la taille du nom */
+    font-size: 36px;
     font-weight: bold;
     margin: 10px 0;
 }
@@ -115,257 +50,33 @@ body {
     max-width: 60%;
 }
 
-/* Section Title Styling */
-.section h2 {
-    font-size: 20px; /* Taille de police augmentée */
-    font-family: 'Playfair Display', serif; /* Police attrayante pour les titres */
-    font-weight: bold;
-    color: #333;
-    margin-top: 10px; /* Espacement réduit */
-    margin-bottom: 10px; /* Espacement réduit */
-    border-top: none;
-    padding-top: 10px;
-    text-align: left;
-}
-
-/* Introduction and Job Opportunities Styling */
-.introduction,
-.job-opportunities,
-.research-interests {
-    max-width: 800px;
-    margin: 0 auto 10px; /* Espacement réduit */
-    text-align: left;
-    line-height: 1.6; /* Espacement entre les lignes réduit */
-}
-
-.job-opportunities h2,
-.job-opportunities p {
-    color: red;
-    font-weight: bold;
-}
-/* Research Interests Section Styling */
-.research-interests {
-    max-width: 800px;
-    margin: 20px auto; /* Espacement ajusté */
-    padding: 20px;
-    background-color: #f9f9f9; /* Fond léger pour mettre en valeur */
-    border-radius: 10px; /* Coins arrondis */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
-}
-
-.research-interests h2 {
-    font-size: 26px;
-    font-family: 'Playfair Display', serif; /* Police attrayante */
-    font-weight: bold;
-    color: #0051a3; /* Couleur bleue pour le titre */
-    margin-bottom: 15px; /* Espacement sous le titre */
-    text-align: center; /* Centrer le titre */
-}
-
-.research-list {
-    list-style-type: none; /* Supprimer les puces */
-    padding-left: 0;
-    margin-top: 10px;
-}
-
-.research-list li {
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 10px; /* Espacement entre les éléments */
-    line-height: 1.6; /* Espacement entre les lignes */
-    padding-left: 20px; /* Alignement du texte */
-    position: relative;
-}
-
-.research-list li::before {
-    content: "•"; /* Ajouter un point personnalisé */
-    color: #0051a3; /* Couleur bleue */
-    font-size: 20px;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-.research-list li strong {
-    color: #0051a3; /* Couleur bleue pour les mots-clés */
-    font-weight: bold;
-}
-/* Research Interests List Styling */
-.research-interests ul {
-    list-style-type: none;
-    padding-left: 0;
-    margin-top: 5px; /* Espacement réduit */
-    line-height: 1.6; /* Espacement entre les lignes réduit */
-}
-
-.research-list li {
-    font-size: 16px;
-    color: #333;
-}
-
-.research-list li strong {
-    color: #0051a3; /* Couleur bleue pour les éléments en gras */
-}
-
-/* Footer Styles */
-.footer {
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    color: #333;
-    padding: 10px 0;
-}
-
-.footer hr {
-    width: 80%;
-    margin: 0 auto 10px;
-    border: none;
-    border-top: 1px solid #cccccc; /* Ligne fine grise */
-}
-
-/* Section Contact */
-.section {
-    text-align: right;
-    margin: 30px auto; /* Espacement réduit */
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.6; /* Espacement entre les lignes réduit */
-    max-width: 800px;
-}
-
-.section h2 {
-    font-size: 40px;
-    font-weight: bold;
-    margin-bottom: 30px; /* Espacement réduit */
-    text-transform: uppercase;
-}
-
-.contact .contact-details {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px; /* Espacement réduit */
-    margin-bottom: 20px; /* Espacement réduit */
-}
-
-.contact .university {
-    flex: 1;
-    text-align: right;
-}
-
-.contact .university h3 {
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.contact .email {
-    font-size: 14px;
-    color: #333;
-    text-align: left;
-}
-
-.contact .email p {
-    margin: 5px 0;
-}
-
-.contact .email a {
-    color: #0051a3; /* Couleur bleue pour les liens */
-    text-decoration: none;
-}
-
-.contact .email a:hover {
-    text-decoration: underline; /* Soulignement au survol */
-}
-
-/* Section CV */
-.section {
-    margin: 30px auto; /* Espacement réduit */
-    max-width: 800px;
-    font-family: 'Poppins', sans-serif;
-    color: #000;
-}
-
-.section h2 {
-    font-size: 28px;
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 15px; /* Espacement réduit */
-}
-
-/* Timeline Styling */
-.timeline {
-    margin-top: 15px; /* Espacement réduit */
-    border-left: 2px solid #000;
-    padding-left: 20px;
-}
-
-.timeline-item {
-    display: flex;
-    margin-bottom: 15px; /* Espacement réduit */
-}
-
-.timeline-item .date {
-    flex: 0 0 120px;
-    font-weight: bold;
-    margin-right: 20px;
-    color: #000;
-}
-
-.timeline-item .content {
-    flex: 1;
-}
-
-.timeline-item .content h4 {
-    font-size: 16px;
-    margin-bottom: 5px;
-    color: #000;
-}
-
-.timeline-item .content p {
-    margin: 0;
-    font-size: 14px;
-    line-height: 1.5;
-}
-
-/* Logos Styles */
-.logos-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px; /* Espacement réduit */
-    margin-top: 15px; /* Espacement réduit */
-    margin-bottom: 15px; /* Espacement réduit */
-}
-
-.logo {
-    max-width: 400px; /* Taille des logos augmentée */
-    height: auto;
-}
-
-
-/* Styles de la barre de navigation */
+/* Navbar */
 .navbar {
     background-color: #2c3e50;
-    padding: 5px 0; /* Réduction du padding */
+    padding: 5px 0;
     text-align: center;
+    width: 100vw;
 }
 
 .navbar ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .navbar ul li {
     display: inline;
-    margin: 0 20px; /* Réduction de l'espace entre les liens */
+    margin: 0 20px;
 }
 
 .navbar ul li a {
     color: #ecf0f1;
     text-decoration: none;
-    font-size: 16px; /* Réduction de la taille du texte */
+    font-size: 16px;
     font-weight: bold;
-    padding: 10px; /* Moins d'espace autour des liens */
+    padding: 10px;
     transition: color 0.3s ease;
 }
 
@@ -373,88 +84,79 @@ body {
     color: #1abc9c;
 }
 
-/* Style des sections */
-section {
-    max-width: 900px; /* Réduction de la largeur */
-    margin: 25px auto; /* Réduction des marges */
-    padding: 25px; /* Moins d'espace intérieur */
-    background-color: #ffffff;
-    border-radius: 6px; /* Coins plus petits */
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
-}
-
-/* Titre des sections */
-section h2 {
+/* Sections générales */
+section, .about, .thesis-info, .research-interests {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    font-size: 25px; /* Réduction de la taille */
-    color: #2c3e50;
-    border-bottom: 1.5px solid #1abc9c;
-    padding-bottom: 8px;
-    margin-bottom: 15px;
+    padding: 50px 0;
 }
 
+.about, .thesis-info, .research-interests {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
 
+/* Titres */
+h1, h2 {
+    font-size: 36px;
+    color: #2c3e50;
+}
 
+p {
+    font-size: 18px;
+    color: #333;
+    max-width: 80%;
+    line-height: 1.6;
+}
 
-/* Liste des certifications */
-section ul {
-    list-style: none;
+/* Listes de recherche */
+.research-list {
+    width: 100vw;
+    text-align: center;
+    list-style-type: none;
     padding: 0;
 }
 
-section ul li {
+.research-list li {
+    width: 80%;
+    margin: 10px auto;
+    font-size: 16px;
     background: #f4f4f4;
-    margin: 10px 0; /* Moins d'espace entre les items */
-    padding: 14px; /* Réduction du padding */
+    padding: 14px;
     border-radius: 4px;
     box-shadow: 1.5px 1.5px 4px rgba(0, 0, 0, 0.08);
     transition: transform 0.15s ease-in-out;
 }
 
-section ul li:hover {
+.research-list li:hover {
     transform: scale(1.01);
 }
 
-/* Liens de vérification et PDF */
-section ul li a {
-    display: inline-block;
-    margin-top: 6px; /* Réduction de l'espace entre les boutons */
-    padding: 6px 10px; /* Réduction de la taille des boutons */
-    border-radius: 4px;
-    text-decoration: none;
-    font-size: 13px; /* Texte plus petit */
-}
-
-section ul li a:first-of-type {
-    background: #1abc9c;
-    color: white;
-    margin-right: 8px;
-}
-
-section ul li a:first-of-type:hover {
-    background: #16a085;
-}
-
-section ul li a:last-of-type {
-    background: #e74c3c;
-    color: white;
-}
-
-section ul li a:last-of-type:hover {
-    background: #c0392b;
-}
-
-/* Responsive Design */
+/* Responsive */
 @media (max-width: 768px) {
+    h1, h2 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .header img {
+        max-width: 150px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
     .navbar ul li {
-        display: block;
         margin: 8px 0;
     }
-
-    section {
-        width: 85%; /* Adaptation à l'écran */
-        padding: 12px; /* Réduction du padding */
-    }
 }
-
-
