@@ -113,7 +113,7 @@ body {
 
 /* Section Title Styling */
 .section h2 {
-     width: 100vw; /* Prend toute la largeur */
+    
     font-size: 20px; /* Taille de police augmentée */
     font-family: 'Playfair Display', serif; /* Police attrayante pour les titres */
     font-weight: bold;
@@ -142,8 +142,7 @@ body {
 }
 /* Research Interests Section Styling */
 .research-interests {
-    width: 100vw; /* Prend toute la largeur */
-   
+    
     margin: 20px auto; /* Espacement ajusté */
     padding: 20px;
     background-color: #f9f9f9; /* Fond léger pour mettre en valeur */
@@ -223,7 +222,7 @@ body {
 
 /* Section Contact */
 .section {
-    width: 100vw; /* Prend toute la largeur */
+  
     text-align: right;
     margin: 30px auto; /* Espacement réduit */
     font-family: 'Poppins', sans-serif;
