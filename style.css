@@ -83,33 +83,36 @@ body {
 }
 
 /* Header Styles */
+
 .header {
+    width: 100vw; /* Occuper toute la largeur de l'écran */
+    height: 100vh; /* Occuper toute la hauteur de l'écran */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrage vertical */
+    align-items: center; /* Centrage horizontal */
     text-align: center;
-    padding: 40px 40px; /* Espacement réduit */
-    border-bottom: none #ccc;
-    margin-bottom: 5px;
+    background: #f5f5f5; /* Couleur de fond, modifiable selon tes préférences */
+    padding: 20px;
 }
 
 .header img {
-    max-width: 250px; /* Taille de la photo augmentée */
+    max-width: 200px; /* Ajuste la taille de la photo */
     height: auto;
-    display: block;
-    margin: 0 auto 10px;
-    border-radius: 5px;
+    border-radius: 50%; /* Arrondi l'image si souhaité */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Ombre douce */
 }
 
 .header h1 {
-    font-size: 32px;
-    font-weight: normal;
-    color: #333;
+    font-size: 40px; /* Augmenter la taille du nom */
+    font-weight: bold;
     margin: 10px 0;
 }
 
 .header p {
-    color: #666;
-    font-size: 18px;
-    margin: 15px 0;
-    font-weight: lighter;
+    font-size: 20px;
+    color: #555;
+    max-width: 60%;
 }
 
 /* Section Title Styling */
