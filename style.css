@@ -11,7 +11,7 @@
 .cta .cta_title,
 footer .footer_links .columns_title {
     font-family: 'Playfair Display', serif; /* Police attrayante pour les titres */
-    font-weight: 700;
+    font-weight: 500;
 }
 
 /* Styles des liens */
@@ -62,13 +62,13 @@ body {
 .navbar {
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    margin-top: 5px;
+    margin-top: 4px;
 }
 
 .navbar ul {
     list-style: none;
     display: flex;
-    gap: 20px; /* Espacement réduit entre les éléments */
+    gap: 15px; /* Espacement réduit entre les éléments */
 }
 
 .navbar ul li a {
@@ -90,11 +90,11 @@ body {
 }
 
 .header img {
-    max-width: 250px; /* Taille de la photo augmentée */
+    max-width: 150px; /* Taille de la photo augmentée */
     height: auto;
     display: block;
-    margin: 0 auto 10px;
-    border-radius: 5px;
+    margin: 0 auto 5px;
+    border-radius: 3px;
 }
 
 .header h1 {
@@ -106,7 +106,7 @@ body {
 
 .header p {
     color: #666;
-    font-size: 18px;
+    font-size: 15px;
     margin: 15px 0;
     font-weight: lighter;
 }
@@ -114,12 +114,12 @@ body {
 /* Section Title Styling */
 .section h2 {
     
-    font-size: 20px; /* Taille de police augmentée */
+    font-size: 15px; /* Taille de police augmentée */
     font-family: 'Playfair Display', serif; /* Police attrayante pour les titres */
     font-weight: bold;
     color: #333;
-    margin-top: 10px; /* Espacement réduit */
-    margin-bottom: 10px; /* Espacement réduit */
+    margin-top: 7px; /* Espacement réduit */
+    margin-bottom: 7px; /* Espacement réduit */
     border-top: none;
     padding-top: 10px;
     text-align: left;
@@ -151,7 +151,7 @@ body {
 }
 
 .research-interests h2 {
-    font-size: 26px;
+    font-size: 16px;
     font-family: 'Playfair Display', serif; /* Police attrayante */
     font-weight: bold;
     color: #0051a3; /* Couleur bleue pour le titre */
