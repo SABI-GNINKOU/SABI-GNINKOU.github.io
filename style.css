@@ -1,3 +1,5 @@
+/* -------- NAVIGATION -------- */
+
 html, body {
     margin: 0;
     padding: 0;
@@ -8,33 +10,53 @@ html, body {
     color: #333;
 }
 
+body {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+/* === Barre de navigation moderne === */
 .navbar {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
-    background: #1c1c1c;
+    background: rgba(28, 28, 28, 0.95);
     z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(6px);
 }
 
 .navbar ul {
     list-style: none;
     display: flex;
-    justify-content: space-around;
-    padding: 1em;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
     margin: 0;
+    gap: 2rem;
+}
+
+.navbar li {
+    display: inline-block;
 }
 
 .navbar a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 .navbar a:hover {
-    color: #00bcd4;
+    background-color: #00bcd4;
+    color: #fff;
 }
 
+/* === Section pleine hauteur avec snap scroll === */
 .section {
     height: 100vh;
     display: flex;
@@ -45,31 +67,8 @@ html, body {
     box-sizing: border-box;
 }
 
-body {
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-}
-
+/* Limite la largeur du contenu principal */
 .header, .cv-subsection, .timeline, .research-interests {
     max-width: 1200px;
     margin: auto;
-}
-.section {
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-}
-document.querySelectorAll('.navbar a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const target = document.getElementById(this.getAttribute('href').substring(1));
-        target.scrollIntoView({ behavior: 'smooth' });
-    });
-});
-@media (max-width: 768px) {
-    .navbar ul {
-        flex-direction: column;
-    }
-
-    .section {
-        padding: 40px 5vw;
-    }
 }
