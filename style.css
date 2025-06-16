@@ -1,456 +1,75 @@
-* {
+html, body {
     margin: 0;
     padding: 0;
-    border: 0;
-    background: transparent;
-}
-
-/* Styles de texte spécifiques */
-.section_title h2,
-.services .services_list h3,
-.cta .cta_title,
-footer .footer_links .columns_title {
-    font-family: 'Playfair Display', serif; /* Police attrayante pour les titres */
-    font-weight: 300;
-}
-
-/* Styles des liens */
-a {
-    color: #0051a3; /* Couleur bleue pour les liens cliquables */
-    background: transparent;
-    text-decoration: none; /* Supprime le soulignement par défaut */
-    font-weight: bold; /* Met en évidence les liens */
-}
-
-a:hover {
-    text-decoration: underline; /* Soulignement au survol */
-}
-
-/* Styles pour les éléments de texte */
-mark {
-    background-color: #ff9;
-    color: #000;
-    font-style: italic;
-    font-weight: bold;
-}
-
-del {
-    text-decoration: line-through;
-}
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #cccccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-/* Body Styling */
-body {
-    font-family: 'Poppins', sans-serif; /* Police attrayante pour le texte */
-    font-size: 12px; /* Taille de police réduite */
-    background-color: #ffffff;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Navbar Styles */
-.navbar {
-    text-align: center;
     font-family: 'Poppins', sans-serif;
-    margin-top: 4px;
+    scroll-behavior: smooth;
+    height: 100%;
+    background-color: #fdfdfd;
+    color: #333;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #1c1c1c;
+    z-index: 1000;
 }
 
 .navbar ul {
     list-style: none;
     display: flex;
-    gap: 10px; /* Espacement réduit entre les éléments */
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 10px;
-}
-
-.navbar ul li a:hover {
-    color: #0051a3; /* Couleur bleue au survol */
-}
-
-/* Header Styles */
-.header {
-    text-align: center;
-    padding: 30px 30px; /* Espacement réduit */
-    border-bottom: none #ccc;
-    margin-bottom: 5px;
-}
-
-.header img {
-    max-width: 150px; /* Taille de la photo augmentée */
-    height: auto;
-    display: block;
-    margin: 0 auto 4px;
-    border-radius: 2px;
-}
-
-.header h1 {
-    font-size: 24px;
-    font-weight: normal;
-    color: #333;
-    margin: 10px 0;
-}
-
-.header p {
-    color: #666;
-    font-size: 12px;
-    margin: 12px 0;
-    font-weight: lighter;
-}
-
-/* Section Title Styling */
-.section h2 {
-    
-    font-size: 10px; /* Taille de police augmentée */
-    font-family: 'Playfair Display', serif; /* Police attrayante pour les titres */
-    font-weight: bold;
-    color: #333;
-    margin-top: 6px; /* Espacement réduit */
-    margin-bottom: 6px; /* Espacement réduit */
-    border-top: none;
-    padding-top: 7px;
-    text-align: left;
-}
-
-/* Introduction and Job Opportunities Styling */
-.introduction,
-.job-opportunities,
-.research-interests {
-    max-width: 500px;
-    margin: 0 auto 10px; /* Espacement réduit */
-    text-align: left;
-    line-height: 1.6; /* Espacement entre les lignes réduit */
-}
-
-.job-opportunities h2,
-.job-opportunities p {
-    color: red;
-    font-weight: bold;
-}
-/* Research Interests Section Styling */
-.research-interests {
-    
-    margin: 20px auto; /* Espacement ajusté */
-    padding: 20px;
-    background-color: #f9f9f9; /* Fond léger pour mettre en valeur */
-    border-radius: 10px; /* Coins arrondis */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
-}
-
-.research-interests h2 {
-    font-size: 16px;
-    font-family: 'Playfair Display', serif; /* Police attrayante */
-    font-weight: bold;
-    color: #0051a3; /* Couleur bleue pour le titre */
-    margin-bottom: 15px; /* Espacement sous le titre */
-    text-align: center; /* Centrer le titre */
-}
-
-.research-list {
-    list-style-type: none; /* Supprimer les puces */
-    padding-left: 0;
-    margin-top: 10px;
-}
-
-.research-list li {
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 10px; /* Espacement entre les éléments */
-    line-height: 1.6; /* Espacement entre les lignes */
-    padding-left: 20px; /* Alignement du texte */
-    position: relative;
-}
-
-.research-list li::before {
-    content: "•"; /* Ajouter un point personnalisé */
-    color: #0051a3; /* Couleur bleue */
-    font-size: 20px;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-.research-list li strong {
-    color: #0051a3; /* Couleur bleue pour les mots-clés */
-    font-weight: bold;
-}
-/* Research Interests List Styling */
-.research-interests ul {
-    list-style-type: none;
-    padding-left: 0;
-    margin-top: 5px; /* Espacement réduit */
-    line-height: 1.6; /* Espacement entre les lignes réduit */
-}
-
-.research-list li {
-    font-size: 12px;
-    color: #333;
-}
-
-.research-list li strong {
-    color: #0051a3; /* Couleur bleue pour les éléments en gras */
-}
-
-/* Footer Styles */
-.footer {
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-size: 12px;
-    color: #333;
-    padding: 10px 0;
-}
-
-.footer hr {
-    width: 70%;
-    margin: 0 auto 8px;
-    border: none;
-    border-top: 1px solid #cccccc; /* Ligne fine grise */
-}
-
-/* Section Contact */
-.section {
-  
-    text-align: right;
-    margin: 30px auto; /* Espacement réduit */
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.6; /* Espacement entre les lignes réduit */
-    max-width: 600px;
-}
-
-.section h2 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 15px; /* Espacement réduit */
-    text-transform: uppercase;
-}
-
-.contact .contact-details {
-    display: flex;
-    justify-content: space-between;
-    gap: 25px; /* Espacement réduit */
-    margin-bottom: 20px; /* Espacement réduit */
-}
-
-.contact .university {
-    flex: 1;
-    text-align: right;
-}
-
-.contact .university h3 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.contact .email {
-    font-size: 14px;
-    color: #333;
-    text-align: left;
-}
-
-.contact .email p {
-    margin: 5px 0;
-}
-
-.contact .email a {
-    color: #0051a3; /* Couleur bleue pour les liens */
-    text-decoration: none;
-}
-
-.contact .email a:hover {
-    text-decoration: underline; /* Soulignement au survol */
-}
-
-/* Section CV */
-.section {
-    margin: 30px auto; /* Espacement réduit */
-    max-width: 800px;
-    font-family: 'Poppins', sans-serif;
-    color: #000;
-}
-
-.section h2 {
-    font-size: 28px;
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 15px; /* Espacement réduit */
-}
-
-/* Timeline Styling */
-.timeline {
-    margin-top: 15px; /* Espacement réduit */
-    border-left: 2px solid #000;
-    padding-left: 20px;
-}
-
-.timeline-item {
-    display: flex;
-    margin-bottom: 15px; /* Espacement réduit */
-}
-
-.timeline-item .date {
-    flex: 0 0 120px;
-    font-weight: bold;
-    margin-right: 20px;
-    color: #000;
-}
-
-.timeline-item .content {
-    flex: 1;
-}
-
-.timeline-item .content h4 {
-    font-size: 16px;
-    margin-bottom: 5px;
-    color: #000;
-}
-
-.timeline-item .content p {
-    margin: 0;
-    font-size: 14px;
-    line-height: 1.5;
-}
-
-/* Logos Styles */
-.logos-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px; /* Espacement réduit */
-    margin-top: 10px; /* Espacement réduit */
-    margin-bottom: 5px; /* Espacement réduit */
-}
-
-.logo {
-    max-width: 400px; /* Taille des logos augmentée */
-    height: auto;
-}
-
-
-/* Styles de la barre de navigation */
-.navbar {
-    background-color: #2c3e50;
-    padding: 4px 0; /* Réduction du padding */
-    text-align: center;
-}
-
-.navbar ul {
-    list-style-type: none;
-    padding: 0;
+    justify-content: space-around;
+    padding: 1em;
     margin: 0;
 }
 
-.navbar ul li {
-    display: inline;
-    margin: 0 20px; /* Réduction de l'espace entre les liens */
-}
-
-.navbar ul li a {
-    color: #ecf0f1;
+.navbar a {
+    color: white;
     text-decoration: none;
-    font-size: 13px; /* Réduction de la taille du texte */
     font-weight: bold;
-    padding: 10px; /* Moins d'espace autour des liens */
     transition: color 0.3s ease;
 }
 
-.navbar ul li a:hover {
-    color: #1abc9c;
+.navbar a:hover {
+    color: #00bcd4;
 }
 
-/* Style des sections */
-section {
-    width: 100vw; /* Prend toute la largeur */
-    max-width: 900px; /* Réduction de la largeur */
-    margin: 35px auto; /* Réduction des marges */
-    padding: 50px 0; /* Moins d'espace intérieur */
-    background-color: #ffffff;
-    border-radius: 4px; /* Coins plus petits */
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+.section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 10vw;
+    scroll-snap-align: start;
+    box-sizing: border-box;
 }
 
-/* Titre des sections */
-section h2 {
-    text-align: center;
-    font-size: 15px; /* Réduction de la taille */
-    color: #2c3e50;
-    border-bottom: 1.5px solid #1abc9c;
-    padding-bottom: 8px;
-    margin-bottom: 10px;
+body {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
 }
 
-
-
-/* Liste des certifications */
-section ul {
-    list-style: none;
-    padding: 0;
+.header, .cv-subsection, .timeline, .research-interests {
+    max-width: 1200px;
+    margin: auto;
 }
-
-section ul li {
-    background: #f4f4f4;
-    margin: 10px 0; /* Moins d'espace entre les items */
-    padding: 14px; /* Réduction du padding */
-    border-radius: 4px;
-    box-shadow: 1.5px 1.5px 4px rgba(0, 0, 0, 0.08);
-    transition: transform 0.15s ease-in-out;
+.section {
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
-
-section ul li:hover {
-    transform: scale(1.01);
-}
-
-/* Liens de vérification et PDF */
-section ul li a {
-    display: inline-block;
-    margin-top: 6px; /* Réduction de l'espace entre les boutons */
-    padding: 6px 10px; /* Réduction de la taille des boutons */
-    border-radius: 4px;
-    text-decoration: none;
-    font-size: 13px; /* Texte plus petit */
-}
-
-section ul li a:first-of-type {
-    background: #1abc9c;
-    color: white;
-    margin-right: 8px;
-}
-
-section ul li a:first-of-type:hover {
-    background: #16a085;
-}
-
-section ul li a:last-of-type {
-    background: #e74c3c;
-    color: white;
-}
-
-section ul li a:last-of-type:hover {
-    background: #c0392b;
-}
-
-/* Responsive Design */
+document.querySelectorAll('.navbar a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.getElementById(this.getAttribute('href').substring(1));
+        target.scrollIntoView({ behavior: 'smooth' });
+    });
+});
 @media (max-width: 768px) {
-    .navbar ul li {
-        display: block;
-        margin: 8px 0;
+    .navbar ul {
+        flex-direction: column;
     }
 
-    section {
-        width: 85%; /* Adaptation à l'écran */
-        padding: 12px; /* Réduction du padding */
+    .section {
+        padding: 40px 5vw;
     }
 }
