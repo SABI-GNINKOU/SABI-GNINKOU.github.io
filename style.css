@@ -120,3 +120,43 @@
 .section a:hover {
   text-decoration: underline;
 }
+.timeline {
+  border-left: 3px solid #00bcd4;
+  margin: 30px 0;
+  padding-left: 20px;
+}
+
+.timeline-item {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -11px;
+  top: 5px;
+  width: 14px;
+  height: 14px;
+  background: #00bcd4;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.timeline-item .date {
+  font-weight: bold;
+  color: #0051a3;
+  margin-bottom: 5px;
+}
+
+.timeline-item .content h4 {
+  font-size: 16px;
+  margin: 4px 0;
+  color: #222;
+}
+
+.timeline-item .content p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #444;
+}
