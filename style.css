@@ -183,3 +183,32 @@
   font-size: 18px;
   line-height: 1;
 }
+.certification-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.certification-list li {
+  background: #f9f9f9;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.certification-list strong {
+  color: #0051a3;
+}
+
+.certification-list a {
+  color: #00bcd4;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.certification-list a:hover {
+  text-decoration: underline;
+}
