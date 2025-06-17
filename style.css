@@ -21,11 +21,11 @@
 }
 
 .profile-image {
-  width: 110px;
-  height: 110px;
+  width: 130px;
+  height: 130px;
   object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 15px;
+  border-radius: 60%;
+  margin-bottom: 20px;
 }
 
 .sidebar h2 {
@@ -47,12 +47,12 @@
 
 .logos-container {
   display: flex;
-  gap: 15px;
-  margin: 17px 0;
+  gap: 17px;
+  margin: 20px 0;
 }
 
 .logo {
-  max-height: 70px;
+  max-height: 80px;
   width: auto;
 }
 
