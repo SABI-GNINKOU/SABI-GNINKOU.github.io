@@ -160,3 +160,26 @@
   font-size: 14px;
   color: #444;
 }
+.research-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.research-list li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+  font-size: 15px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.research-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #00bcd4;
+  font-size: 18px;
+  line-height: 1;
+}
