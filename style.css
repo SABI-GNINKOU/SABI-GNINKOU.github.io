@@ -4,7 +4,8 @@ body {
   font-family: 'Poppins', sans-serif;
   background: #f5f7fa;
   color: #333;
-  line-height: 1.7; /* 🔥 texte plus lisible */
+  line-height: 1.8; /* 🔥 texte plus lisible */
+  font-size: 16px;
 }
 
 a {
@@ -23,7 +24,8 @@ a:hover {
 
 /* ==== Sidebar ==== */
 .sidebar {
-  width: 380px; /* 🔥 plus large */
+  width: 350px;        /* largeur fixe */
+  min-width: 350px;
   background: #0d1b2a;
   color: #fff;
   padding: 25px;
@@ -111,16 +113,21 @@ a:hover {
 
 /* ==== Main content ==== */
 .content {
-  margin-left: 400px; /* 🔥 espace plus grand par rapport à la sidebar */
-  padding: 60px 80px; /* 🔥 marges internes autour du contenu */
+  margin-left: 370px;   /* largeur sidebar (350px) + espace */
+  padding: 40px 60px;   /* marges internes */
   flex: 1;
-  max-width: calc(100% - 420px); /* 🔥 empêche d’aller trop à droite */
+  max-width: calc(100% - 400px); /* évite d’aller trop à droite */
   box-sizing: border-box;
 }
 
+/* ==== Sections en "cards" ==== */
 .section {
-  margin-bottom: 70px;
+  margin-bottom: 40px;
   display: none;
+  background: #fff;             /* fond blanc */
+  padding: 30px;
+  border-radius: 10px;          /* coins arrondis */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* ombre légère */
   animation: fadeIn 0.6s ease-in-out;
 }
 .section.active {
@@ -131,6 +138,7 @@ a:hover {
   border-bottom: 2px solid #0077b6;
   display: inline-block;
   padding-bottom: 6px;
+  margin-bottom: 20px;
 }
 
 /* ==== Animation ==== */
@@ -147,11 +155,11 @@ a:hover {
 }
 .research-list li,
 .certification-list li {
-  background: #fff;
+  background: #f9f9f9;
   margin: 10px 0;
   padding: 12px;
   border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
 }
 
 /* ==== Footer ==== */
@@ -160,6 +168,8 @@ a:hover {
   padding: 18px;
   background: #0d1b2a;
   color: #fff;
+  margin-top: 30px;
+  font-size: 14px;
 }
 
 /* ==== Responsive design ==== */
@@ -228,8 +238,13 @@ a:hover {
   }
 
   .content {
-    margin-left: 0; /* 🔥 pas de sidebar fixe en mobile */
+    margin-left: 0;
     padding: 20px;
     max-width: 100%;
+  }
+
+  .section {
+    margin-bottom: 25px;
+    padding: 20px;
   }
 }
