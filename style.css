@@ -21,8 +21,17 @@ a:hover {
 }
 
 /* ==== Sidebar ==== */
+
+
+.content {
+  margin-left: 380px; /* contenu repoussé correctement */
+  max-width: calc(100% - 400px); /* pour éviter que ça s’étale trop */
+}
+
 .sidebar {
-  width: 320px;
+  width: 380px;   /* plus large qu’avant */
+  min-width: 380px; /* fixe une largeur minimale */
+ 
   background: #0d1b2a;
   color: #fff;
   padding: 25px;
