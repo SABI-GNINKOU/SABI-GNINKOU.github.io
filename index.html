@@ -12,7 +12,7 @@
 
 <body>
   <div class="container">
-    <!-- === Colonne gauche : profil fixe === -->
+    <!-- === Sidebar === -->
     <aside class="sidebar">
       <img src="1757144899648.png" alt="Razak Christophe Sabi Gninkou" class="profile-image">
       <h2>SABI GNINKOU Razak Christophe</h2>
@@ -34,6 +34,7 @@
       <!-- Bouton hamburger (mobile) -->
       <div class="menu-toggle"><i class="fas fa-bars"></i> Menu</div>
 
+      <!-- Navigation -->
       <nav class="navbar">
         <ul class="nav-links">
           <li><a href="#home" class="nav-item">Home</a></li>
@@ -53,7 +54,7 @@
       </div>
     </aside>
 
-    <!-- === Colonne droite : contenu scrollable === -->
+    <!-- === Content === -->
     <main class="content">
       <!-- HOME -->
       <section id="home" class="section active">
@@ -157,6 +158,10 @@
     const menuToggle = document.querySelector('.menu-toggle');
     const navbar = document.querySelector('.navbar');
 
+    // initialisation : cacher toutes sauf Home
+    sections.forEach(sec => sec.classList.remove('active'));
+    document.getElementById("home").classList.add("active");
+
     navItems.forEach(item => {
       item.addEventListener('click', (e) => {
         e.preventDefault();
@@ -168,7 +173,7 @@
         navItems.forEach(nav => nav.classList.remove('active'));
         item.classList.add('active');
 
-        navbar.classList.remove('active');
+        navbar.classList.remove('active'); // fermer menu mobile
       });
     });
 
@@ -180,3 +185,5 @@
   </script>
 </body>
 </html>
+
+  
