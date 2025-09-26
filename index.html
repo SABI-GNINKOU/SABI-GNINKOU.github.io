@@ -33,12 +33,12 @@
 
       <nav class="navbar">
         <ul class="nav-links">
-          <li><a href="#home" class="nav-item">Home</a></li>
-          <li><a href="#contact" class="nav-item">Contact</a></li>
-          <li><a href="#cv" class="nav-item">CV</a></li>
-          <li><a href="#research" class="nav-item">Research & Teaching</a></li>
-          <li><a href="#certifications" class="nav-item">Certifications</a></li>
-          <li><a href="#publications" class="nav-item">Publications</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#cv">CV</a></li>
+          <li><a href="#research">Research & Teaching</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#publications">Publications</a></li>
         </ul>
       </nav>
 
@@ -51,11 +51,24 @@
 
     <!-- === Colonne droite : contenu scrollable === -->
     <main class="content">
-      <section id="home" class="section active">
-        <h2>About Me</h2>
-        <p>
-          I am a <strong>PhD candidate in Applied Mathematics</strong> working on probabilistic modeling and surrogate learning for complex mechanical systems.
-        </p>
+      <section id="home" class="section">
+        <div class="about-me">
+          <h2>About Me</h2>
+          <p>
+            I am a <strong>PhD candidate in Applied Mathematics</strong> working on probabilistic modeling and surrogate learning for complex mechanical systems.
+          </p>
+          <p>
+            My thesis is carried out at <a href="https://www.uphf.fr/" target="_blank">UPHF</a> and 
+            <a href="https://www.mines-stetienne.fr/" target="_blank">EMSE</a>, within the 
+            <a href="https://anr.fr/Projet-ANR-23-CE46-0016" target="_blank">ANR JCJC GAME</a> project.
+          </p>
+          <p>
+            My research focuses on <strong>Gaussian Processes (GPs)</strong> for modeling, simulation and identification of mechanical systems with uncertain or incomplete data.
+          </p>
+          <p>
+            Applications include fluid flow in porous media and contact-induced phenomena such as brake pad wear and acoustic pressure modeling.
+          </p>
+        </div>
       </section>
 
       <section id="contact" class="section">
@@ -67,32 +80,29 @@
         <p>Other: razsabigninchrist@gmail.com / sabigninkou.razakchristophe@imsp-uac.org</p>
       </section>
 
-      <section id="cv" class="section">
-        <h2>Curriculum Vitae</h2>
-        <p>CV content will go here...</p>
-      </section>
-
       <section id="research" class="section">
-        <h2>Research & Teaching</h2>
-        <ul>
+        <h2>PhD Thesis Information</h2>
+        <p><strong>Title:</strong> Gaussian Process Modeling of Mechanical Random Fields</p>
+        <p><strong>Supervisors:</strong> R. Le Riche, Y. Maïnassara, A. Lopez-Lopera, F. Massa, L. Reding</p>
+        <p><strong>Funding:</strong> ANR JCJC GAME</p>
+        <h2>Research Interests</h2>
+        <ul class="research-list">
           <li>Gaussian Processes</li>
+          <li>Machine Learning</li>
+          <li>Multi-task learning</li>
           <li>Uncertainty Quantification</li>
           <li>Functional Data Analysis</li>
+          <li>Inverse Problems</li>
         </ul>
       </section>
 
       <section id="certifications" class="section">
         <h2>Certifications</h2>
-        <ul>
-          <li>Improving Deep Neural Networks – DeepLearning.AI</li>
-          <li>Structuring Machine Learning Projects – DeepLearning.AI</li>
-          <li>Responsible AI – Google Cloud</li>
+        <ul class="certification-list">
+          <li><strong>Improving Deep Neural Networks</strong> – DeepLearning.AI <a href="#">Verify</a></li>
+          <li><strong>Structuring Machine Learning Projects</strong> – DeepLearning.AI <a href="#">Verify</a></li>
+          <li><strong>Responsible AI: Applying AI Principles</strong> – Google Cloud <a href="#">Verify</a></li>
         </ul>
-      </section>
-
-      <section id="publications" class="section">
-        <h2>Publications</h2>
-        <p>List of scientific publications...</p>
       </section>
     </main>
   </div>
@@ -100,34 +110,6 @@
   <footer class="footer">
     <p>© 2024 SABI GNINKOU Razak Christophe</p>
   </footer>
-<script>
-  const navItems = document.querySelectorAll('.nav-item');
-  const sections = document.querySelectorAll('.section');
-
-  navItems.forEach(item => {
-    item.addEventListener('click', (e) => {
-      e.preventDefault();
-
-      // cacher toutes les sections
-      sections.forEach(sec => sec.classList.remove('active'));
-
-      // afficher la section ciblée
-      const targetId = item.getAttribute('href').substring(1);
-      document.getElementById(targetId).classList.add('active');
-
-      // retirer la classe active de tous les liens
-      navItems.forEach(nav => nav.classList.remove('active'));
-
-      // ajouter la classe active sur le lien cliqué
-      item.classList.add('active');
-    });
-  });
-
-  // mettre "Home" actif par défaut au chargement
-  document.querySelector('.nav-links a[href="#home"]').classList.add('active');
-</script>
-
-
 </body>
 
 </html>
