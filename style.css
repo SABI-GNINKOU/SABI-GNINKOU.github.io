@@ -112,13 +112,16 @@ a:hover {
 }
 
 /* ==== Main content ==== */
+
 .content {
-  margin-left: 370px;   /* largeur sidebar (350px) + espace */
-  padding: 40px 60px;   /* marges internes */
+  margin-left: 530px;   /* 500px sidebar + 30px espace */
+  padding: 40px 60px;   
   flex: 1;
-  max-width: calc(100% - 400px); /* évite d’aller trop à droite */
+  max-width: calc(100% - 560px); /* 500 + 60 marge totale */
   box-sizing: border-box;
 }
+
+
 
 /* ==== Sections en "cards" ==== */
 .section {
