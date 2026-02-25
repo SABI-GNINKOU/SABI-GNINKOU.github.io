@@ -4,8 +4,8 @@ body {
   font-family: 'Poppins', sans-serif;
   background: #f5f7fa;
   color: #333;
-  line-height: 1.8; /* 🔥 texte plus lisible */
-  font-size: 16px;
+  line-height: 2.0; /* 🔥 texte plus lisible */
+  font-size: 18px;
 }
 
 a {
