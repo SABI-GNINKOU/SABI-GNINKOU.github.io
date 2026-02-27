@@ -261,13 +261,14 @@ a:hover {
 
 .poster-img {
   width: 100%;
-  max-width: 1000px;
+  max-width: 850px;   /* plus équilibré */
   height: auto;
   display: block;
-  margin: 30px auto;
+  margin: 40px auto;
   border-radius: 12px;
   box-shadow: 0 15px 40px rgba(0,0,0,0.15);
 }
+
 
 .poster-caption {
   text-align: center;
