@@ -255,3 +255,23 @@ a:hover {
     padding: 20px;
   }
 }
+.poster-figure {
+  margin: 16px 0;
+}
+
+.poster-img {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  display: block;
+  margin: 30px auto;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.poster-caption {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
