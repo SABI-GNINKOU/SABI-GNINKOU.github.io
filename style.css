@@ -1,361 +1,674 @@
-/* ==== Global ==== */
-* {
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: #f5f7fa;
-  color: #333;
-  line-height: 1.8;
-  font-size: 18px;
-}
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-a {
-  color: #0077b6;
-  text-decoration: none;
-}
+  <title>Razak Christophe Sabi Gninkou</title>
 
-a:hover {
-  text-decoration: underline;
-}
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
 
-/* ==== Layout global centré ==== */
-.container {
-  width: 100%;
-  max-width: 1380px;
-  min-height: 100vh;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 390px 1fr;
-  gap: 28px;
-  padding: 0 24px;
-}
+  <style>
 
-/* ==== Sidebar ==== */
-.sidebar {
-  background: #ffffff;
-  color: #333;
-  padding: 32px 28px;
-  height: 100vh;
-  position: sticky;
-  top: 0;
-  overflow-y: auto;
-  border-right: 1px solid #e5e7eb;
-  box-shadow: 3px 0 14px rgba(0, 0, 0, 0.08);
-}
+    /* =========================================================
+       RESET
+    ========================================================= */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-.profile-image {
-  width: 245px;
-  height: 245px;
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto 24px;
-  border: 3px solid #0077b6;
-  object-fit: cover;
-}
+    /* =========================================================
+       BODY
+    ========================================================= */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f5f7fa;
+      color: #333;
+      line-height: 1.8;
+      font-size: 18px;
+    }
 
-.sidebar h2 {
-  text-align: center;
-  font-size: 22px;
-  line-height: 1.35;
-  margin: 10px 0 20px;
-  color: #0d1b2a;
-}
+    a {
+      color: #0077b6;
+      text-decoration: none;
+    }
 
-.sidebar h3 {
-  text-align: center;
-  font-size: 17px;
-  margin: 8px 0 18px;
-  color: #333;
-}
+    a:hover {
+      text-decoration: underline;
+    }
 
-.sidebar p {
-  text-align: center;
-  margin: 6px 0;
-  color: #333;
-}
+    /* =========================================================
+       MAIN LAYOUT
+    ========================================================= */
+    .container {
+      max-width: 1450px;
+      margin: 0 auto;
 
-/* ==== Contact ==== */
-.contact-info {
-  font-size: 14px;
-  margin: 20px 0 24px;
-  line-height: 1.7;
-  color: #555;
-  text-align: center;
-}
+      display: grid;
+      grid-template-columns: 390px 1fr;
 
-/* ==== Logos ==== */
-.logos-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 70px;
-  margin: 22px 0 30px;
-}
+      gap: 32px;
 
-.logo {
-  width: 75px;
-  height: auto;
-}
+      min-height: 100vh;
 
-/* ==== Navigation ==== */
-.menu-toggle {
-  display: none;
-}
+      padding: 0 22px;
+    }
 
-.navbar {
-  width: 100%;
-  margin-top: 12px;
-}
+    /* =========================================================
+       SIDEBAR
+    ========================================================= */
+    .sidebar {
+      background: #ffffff;
 
-.nav-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+      height: 100vh;
 
-.nav-links li {
-  margin: 8px 0;
-}
+      position: sticky;
+      top: 0;
 
-.nav-links a {
-  color: #333;
-  padding: 12px 16px;
-  display: block;
-  border-radius: 7px;
-  transition: all 0.25s ease;
-  font-weight: 500;
-}
+      overflow-y: auto;
 
-.nav-links a:hover {
-  background: #eef6fb;
-  color: #0077b6;
-  padding-left: 22px;
-  text-decoration: none;
-}
+      padding: 32px 28px;
 
-.nav-links a.active {
-  background: #0077b6;
-  color: #fff;
-  font-weight: 600;
-  box-shadow: inset 4px 0 0 #0d1b2a;
-}
+      border-right: 1px solid #e5e7eb;
 
-/* ==== External links ==== */
-.external-links {
-  margin-top: 28px;
-  text-align: center;
-}
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    }
 
-.external-links a {
-  color: #333;
-  margin: 0 12px;
-  font-size: 22px;
-  transition: color 0.3s ease;
-}
+    /* =========================================================
+       PROFILE
+    ========================================================= */
+    .profile-image {
+      width: 250px;
+      height: 250px;
 
-.external-links a:hover {
-  color: #0077b6;
-}
+      border-radius: 50%;
 
-/* ==== Main content ==== */
-.content {
-  width: 100%;
-  min-height: 100vh;
-  padding: 28px 0;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
+      object-fit: cover;
 
-/* ==== Sections ==== */
-.section {
-  display: none;
-  width: 100%;
-  max-width: 930px;
-  margin: 0 auto 40px;
-  background: #ffffff;
-  padding: 38px 42px;
-  border-radius: 14px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
-  animation: fadeIn 0.45s ease-in-out;
-}
+      display: block;
 
-.section.active {
-  display: block;
-}
+      margin: 0 auto 24px;
 
-.section h2 {
-  color: #0d1b2a;
-  border-bottom: 2px solid #0077b6;
-  display: inline-block;
-  padding-bottom: 6px;
-  margin-bottom: 24px;
-}
+      border: 3px solid #0077b6;
+    }
 
-/* ==== Animation ==== */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(12px);
-  }
+    .sidebar h2 {
+      text-align: center;
 
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+      font-size: 22px;
 
-/* ==== Lists ==== */
-.research-list,
-.certification-list {
-  list-style: none;
-  padding: 0;
-}
+      line-height: 1.35;
 
-.research-list li,
-.certification-list li {
-  background: #f8fafc;
-  margin: 10px 0;
-  padding: 14px;
-  border-radius: 8px;
-  border: 1px solid #e5e7eb;
-}
+      color: #0d1b2a;
 
-/* ==== Certifications ==== */
-.cert-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 14px;
-}
+      margin-bottom: 22px;
+    }
 
-.cert-card {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 20px;
-  padding: 14px 0;
-  border-bottom: 1px solid #e5e7eb;
-  line-height: 1.5;
-}
+    .sidebar h3 {
+      text-align: center;
 
-.cert-card strong {
-  color: #222;
-}
+      font-size: 17px;
 
-.cert-card a {
-  white-space: nowrap;
-  font-weight: 500;
-}
+      color: #222;
 
-/* ==== Posters / figures ==== */
-.poster-figure {
-  margin: 16px 0;
-}
+      margin-bottom: 18px;
+    }
 
-.poster-img {
-  width: 100%;
-  max-width: 850px;
-  height: auto;
-  display: block;
-  margin: 30px auto;
-  border-radius: 12px;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-}
+    .sidebar p {
+      text-align: center;
 
-.poster-caption {
-  text-align: center;
-  margin-top: 10px;
-  font-size: 0.95rem;
-  opacity: 0.85;
-}
+      margin-bottom: 8px;
+    }
 
-/* ==== Footer ==== */
-.footer {
-  text-align: center;
-  padding: 18px;
-  background: #ffffff;
-  color: #555;
-  margin-top: 30px;
-  font-size: 14px;
-  border-top: 1px solid #e5e7eb;
-}
+    /* =========================================================
+       CONTACT
+    ========================================================= */
+    .contact-info {
+      text-align: center;
 
-/* ==== Responsive ==== */
-@media (max-width: 900px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    gap: 0;
-  }
+      font-size: 14px;
 
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-    padding: 24px 18px;
-    box-shadow: none;
-    border-right: none;
-    border-bottom: 1px solid #e5e7eb;
-  }
+      line-height: 1.7;
 
-  .profile-image {
-    width: 150px;
-    height: 150px;
-    margin-bottom: 16px;
-  }
+      color: #555;
 
-  .logos-container {
-    display: none;
-  }
+      margin: 22px 0;
+    }
 
-  .menu-toggle {
-    display: block;
-    cursor: pointer;
-    font-size: 22px;
-    color: #fff;
-    background: #0077b6;
-    padding: 8px 12px;
-    border-radius: 5px;
-    margin: 12px auto;
-    transition: background 0.3s ease;
-  }
+    /* =========================================================
+       LOGOS
+    ========================================================= */
+    .logos-container {
+      display: flex;
 
-  .menu-toggle:hover {
-    background: #00b4d8;
-  }
+      justify-content: center;
+      align-items: center;
 
-  .navbar {
-    display: none;
-    text-align: center;
-    margin-top: 10px;
-  }
+      gap: 70px;
 
-  .navbar.active {
-    display: block;
-  }
+      margin: 22px 0 30px;
+    }
 
-  .nav-links a {
-    padding: 10px;
-    font-size: 16px;
-  }
+    .logo {
+      width: 70px;
+      height: auto;
+    }
 
-  .content {
-    padding: 22px;
-    display: block;
-  }
+    /* =========================================================
+       MENU BUTTON MOBILE
+    ========================================================= */
+    .menu-toggle {
+      display: none;
+    }
 
-  .section {
-    max-width: 100%;
-    padding: 24px;
-    margin-bottom: 25px;
-  }
+    /* =========================================================
+       NAVBAR
+    ========================================================= */
+    .navbar {
+      width: 100%;
+    }
 
-  .cert-card {
-    flex-direction: column;
-    gap: 4px;
-  }
-}
+    .nav-links {
+      list-style: none;
+    }
+
+    .nav-links li {
+      margin: 10px 0;
+    }
+
+    .nav-links a {
+      display: block;
+
+      padding: 13px 16px;
+
+      border-radius: 7px;
+
+      color: #333;
+
+      font-weight: 500;
+
+      transition: all 0.25s ease;
+    }
+
+    .nav-links a:hover {
+      background: #eef6fb;
+
+      color: #0077b6;
+
+      padding-left: 22px;
+
+      text-decoration: none;
+    }
+
+    .nav-links a.active {
+      background: #0077b6;
+
+      color: #ffffff;
+
+      font-weight: 600;
+
+      box-shadow: inset 4px 0 0 #0d1b2a;
+    }
+
+    /* =========================================================
+       EXTERNAL LINKS
+    ========================================================= */
+    .external-links {
+      margin-top: 30px;
+
+      text-align: center;
+    }
+
+    .external-links a {
+      font-size: 22px;
+
+      color: #333;
+
+      margin: 0 12px;
+
+      transition: 0.3s;
+    }
+
+    .external-links a:hover {
+      color: #0077b6;
+    }
+
+    /* =========================================================
+       CONTENT
+    ========================================================= */
+    .content {
+      width: 100%;
+
+      display: flex;
+
+      justify-content: center;
+
+      align-items: flex-start;
+
+      padding: 30px 0;
+    }
+
+    /* =========================================================
+       SECTIONS
+    ========================================================= */
+    .section {
+      display: none;
+
+      width: 100%;
+
+      max-width: 950px;
+
+      background: #ffffff;
+
+      padding: 42px;
+
+      border-radius: 14px;
+
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+
+      animation: fadeIn 0.4s ease-in-out;
+    }
+
+    .section.active {
+      display: block;
+    }
+
+    .section h2 {
+      color: #0d1b2a;
+
+      border-bottom: 2px solid #0077b6;
+
+      display: inline-block;
+
+      padding-bottom: 6px;
+
+      margin-bottom: 24px;
+    }
+
+    /* =========================================================
+       ANIMATION
+    ========================================================= */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* =========================================================
+       CERTIFICATIONS
+    ========================================================= */
+    .cert-grid {
+      display: grid;
+      gap: 14px;
+    }
+
+    .cert-card {
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: flex-start;
+
+      gap: 20px;
+
+      padding: 14px 0;
+
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .cert-card strong {
+      color: #222;
+    }
+
+    .cert-card a {
+      white-space: nowrap;
+
+      font-weight: 500;
+    }
+
+    /* =========================================================
+       FOOTER
+    ========================================================= */
+    .footer {
+      text-align: center;
+
+      padding: 18px;
+
+      margin-top: 30px;
+
+      background: #ffffff;
+
+      color: #555;
+
+      font-size: 14px;
+
+      border-top: 1px solid #e5e7eb;
+    }
+
+    /* =========================================================
+       RESPONSIVE
+    ========================================================= */
+    @media (max-width: 900px) {
+
+      .container {
+        display: flex;
+        flex-direction: column;
+
+        padding: 0;
+
+        gap: 0;
+      }
+
+      .sidebar {
+        width: 100%;
+
+        height: auto;
+
+        position: relative;
+
+        border-right: none;
+
+        border-bottom: 1px solid #e5e7eb;
+
+        box-shadow: none;
+      }
+
+      .profile-image {
+        width: 150px;
+        height: 150px;
+      }
+
+      .logos-container {
+        display: none;
+      }
+
+      .menu-toggle {
+        display: block;
+
+        width: fit-content;
+
+        margin: 14px auto;
+
+        padding: 8px 12px;
+
+        background: #0077b6;
+
+        color: white;
+
+        border-radius: 6px;
+
+        cursor: pointer;
+
+        font-size: 22px;
+      }
+
+      .navbar {
+        display: none;
+
+        text-align: center;
+      }
+
+      .navbar.active {
+        display: block;
+      }
+
+      .content {
+        padding: 22px;
+
+        display: block;
+      }
+
+      .section {
+        max-width: 100%;
+
+        padding: 24px;
+      }
+
+      .cert-card {
+        flex-direction: column;
+
+        gap: 6px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+    <aside class="sidebar">
+
+      <img src="profile.jpg" alt="Profile" class="profile-image">
+
+      <h2>
+        SABI GNINKOU Razak Christophe
+      </h2>
+
+      <h3>
+        PhD Candidate in Applied Mathematics
+      </h3>
+
+      <p>
+        Université Polytechnique Hauts-de-France (UPHF)
+      </p>
+
+      <p>
+        & École des Mines de Saint-Étienne (EMSE)
+      </p>
+
+      <div class="contact-info">
+        <p>
+          RazakChristophe.SabiGninkou@uphf.fr
+        </p>
+
+        <p>
+          razsabigninchrist@gmail.com
+        </p>
+      </div>
+
+      <div class="logos-container">
+        <img src="uphf.png" class="logo">
+        <img src="emse.png" class="logo">
+      </div>
+
+      <div class="menu-toggle" id="menuToggle">
+        ☰ Menu
+      </div>
+
+      <nav class="navbar" id="navbar">
+
+        <ul class="nav-links">
+
+          <li>
+            <a href="#home" class="active">
+              Homepage
+            </a>
+          </li>
+
+          <li>
+            <a href="#publications">
+              Publications
+            </a>
+          </li>
+
+          <li>
+            <a href="#certifications">
+              Certifications
+            </a>
+          </li>
+
+          <li>
+            <a href="#teaching">
+              Teaching
+            </a>
+          </li>
+
+          <li>
+            <a href="#toolboxes">
+              Toolboxes
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </aside>
+
+    <!-- =====================================================
+         CONTENT
+    ====================================================== -->
+    <main class="content">
+
+      <!-- HOME -->
+      <section id="home" class="section active">
+
+        <h2>About Me</h2>
+
+        <p>
+          I am a <strong>PhD candidate in Applied Mathematics</strong>.
+        </p>
+
+      </section>
+
+      <!-- PUBLICATIONS -->
+      <section id="publications" class="section">
+
+        <h2>Research & Publications</h2>
+
+        <p>
+          Publications content here.
+        </p>
+
+      </section>
+
+      <!-- CERTIFICATIONS -->
+      <section id="certifications" class="section">
+
+        <h2>Certifications</h2>
+
+        <div class="cert-grid">
+
+          <div class="cert-card">
+            <div>
+              <strong>Improving Deep Neural Networks</strong><br>
+              DeepLearning.AI
+            </div>
+
+            <a href="#">Verify</a>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- TEACHING -->
+      <section id="teaching" class="section">
+
+        <h2>Teaching</h2>
+
+        <p>
+          Teaching content here.
+        </p>
+
+      </section>
+
+      <!-- TOOLBOXES -->
+      <section id="toolboxes" class="section">
+
+        <h2>Toolboxes</h2>
+
+        <p>
+          Toolbox content here.
+        </p>
+
+      </section>
+
+    </main>
+
+  </div>
+
+  <!-- =====================================================
+       JAVASCRIPT
+  ====================================================== -->
+  <script>
+
+    /* =====================================================
+       MOBILE MENU
+    ====================================================== */
+    const menuToggle =
+      document.getElementById("menuToggle");
+
+    const navbar =
+      document.getElementById("navbar");
+
+    menuToggle.addEventListener("click", () => {
+      navbar.classList.toggle("active");
+    });
+
+    /* =====================================================
+       NAVIGATION BETWEEN SECTIONS
+    ====================================================== */
+    const links =
+      document.querySelectorAll(".nav-links a");
+
+    const sections =
+      document.querySelectorAll(".section");
+
+    links.forEach(link => {
+
+      link.addEventListener("click", function (e) {
+
+        e.preventDefault();
+
+        /* remove active */
+        links.forEach(l =>
+          l.classList.remove("active")
+        );
+
+        sections.forEach(s =>
+          s.classList.remove("active")
+        );
+
+        /* active link */
+        this.classList.add("active");
+
+        /* target */
+        const targetId =
+          this.getAttribute("href")
+            .replace("#", "");
+
+        const targetSection =
+          document.getElementById(targetId);
+
+        if (targetSection) {
+          targetSection.classList.add("active");
+        }
+
+      });
+
+    });
+
+  </script>
+
+</body>
+
+</html>
