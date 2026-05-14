@@ -1,11 +1,13 @@
- /* ==== Global ==== */
+/* =========================================================
+   GLOBAL
+========================================================= */
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: #f5f7fa;
-  color: #333;
-  line-height: 1.8;
-  font-size: 18px;
+  background: #ffffff;
+  color: #555;
+  line-height: 1.5;
+  font-size: 15px;
 }
 
 a {
@@ -17,67 +19,81 @@ a:hover {
   text-decoration: underline;
 }
 
-/* ==== Layout ==== */
+/* =========================================================
+   MAIN LAYOUT  (style Andrés Lopez-Lopera)
+========================================================= */
 .container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 300px 680px;
+  column-gap: 80px;
+  max-width: 1100px;
+  margin: 40px auto;
   min-height: 100vh;
+  align-items: start;
 }
 
-.content {
-  margin-left: 500px;
-  padding: 20px;
-  width: calc(100% - 500px);
+/* =========================================================
+   SIDEBAR
+========================================================= */
+.sidebar {
+  width: 300px;
+  min-width: 300px;
+  position: relative;
+  background: transparent;
+  padding: 0;
   box-sizing: border-box;
 }
 
-.section {
-  display: none;
-  width: 100%;
-  max-width: 1600px;
-  min-height: calc(100vh - 40px);
-  margin: 0;
-  background: #ffffff;
-  padding: 45px;
-  border-radius: 16px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
-  animation: fadeIn 0.5s ease-in-out;
-  box-sizing: border-box;
-}
-
-
+/* =========================================================
+   PROFILE IMAGE
+========================================================= */
 .profile-image {
-  width: 200px;
-  height: 200px;
+  width: 230px;
+  height: 230px;
   border-radius: 50%;
   display: block;
-  margin: 0 auto 18px;
-  border: 3px solid #0077b6;
+  margin: 0 auto 18px auto;
   object-fit: cover;
+  border: none;
 }
 
+/* =========================================================
+   SIDEBAR TEXT
+========================================================= */
 .sidebar h2 {
   text-align: center;
-  font-size: 21px;
+  font-size: 20px;
   margin: 12px 0;
-  color: #0d1b2a;
+  color: #0077b6;
+  line-height: 1.4;
 }
 
-.sidebar h3,
+.sidebar h3 {
+  font-size: 15px;
+  font-weight: 500;
+  color: #555;
+  margin-top: 10px;
+}
+
 .sidebar p {
-  color: #333;
+  color: #666;
+  margin: 6px 0;
 }
 
 .contact-info {
   font-size: 14px;
-  margin: 20px 0;
   line-height: 1.6;
-  color: #555;
+  margin-top: 20px;
 }
 
+/* =========================================================
+   LOGOS
+========================================================= */
 .logos-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
+  gap: 25px;
   margin: 25px 0;
 }
 
@@ -86,9 +102,11 @@ a:hover {
   height: auto;
 }
 
-/* ==== Navigation ==== */
+/* =========================================================
+   NAVIGATION
+========================================================= */
 .navbar {
-  margin-top: 25px;
+  margin-top: 30px;
 }
 
 .nav-links {
@@ -98,126 +116,111 @@ a:hover {
 }
 
 .nav-links li {
-  margin: 10px 0;
+  margin: 8px 0;
 }
 
 .nav-links a {
-  color: #333;
-  padding: 10px 14px;
-  display: block;
-  border-radius: 6px;
-  transition: all 0.25s ease;
-  position: relative;
-  font-weight: 500;
+  color: #0077b6;
+  font-size: 15px;
+  font-weight: 400;
+  display: inline-block;
+  padding: 2px 0;
+  transition: 0.2s ease;
 }
 
 .nav-links a:hover {
-  background: #eef6fb;
-  color: #0077b6;
-  padding-left: 20px;
-  text-decoration: none;
+  color: #005b8f;
+  text-decoration: underline;
 }
 
 .nav-links a.active {
-  background: #0077b6;
-  color: #fff;
   font-weight: 600;
-  box-shadow: inset 4px 0 0 #0d1b2a;
 }
 
-/* ==== External links ==== */
+/* =========================================================
+   EXTERNAL LINKS
+========================================================= */
 .external-links {
-  margin-top: 35px;
-  text-align: center;
+  margin-top: 20px;
 }
 
 .external-links a {
-  color: #333;
-  margin: 0 12px;
-  font-size: 22px;
-  transition: color 0.3s ease;
-}
-
-.external-links a:hover {
   color: #0077b6;
+  margin-right: 10px;
+  font-size: 14px;
 }
 
-
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
 .content {
-  margin-left: 500px;
-  padding: 20px;
-  width: calc(100% - 500px);
+  width: 100%;
+  padding: 0;
   box-sizing: border-box;
 }
 
+/* =========================================================
+   SECTIONS
+========================================================= */
 .section {
   display: none;
   width: 100%;
-  max-width: 1600px;
+  max-width: 680px;
+  background: transparent;
+  padding: 0;
   margin: 0;
-  background: #ffffff;
-  padding: 45px;
-  border-radius: 16px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
-  animation: fadeIn 0.5s ease-in-out;
+  box-shadow: none;
+  border-radius: 0;
+  animation: fadeIn 0.4s ease;
   box-sizing: border-box;
 }
-
 
 .section.active {
   display: block;
 }
 
 .section h2 {
-  color: #0d1b2a;
+  color: #222;
+  font-size: 22px;
+  margin-bottom: 25px;
   border-bottom: 2px solid #0077b6;
   display: inline-block;
-  padding-bottom: 6px;
-  margin-bottom: 20px;
+  padding-bottom: 5px;
 }
 
-/* ==== Animation ==== */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(12px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.section h3 {
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 12px;
 }
 
-/* ==== Lists ==== */
+.section p {
+  margin-bottom: 14px;
+}
+
+/* =========================================================
+   LISTS
+========================================================= */
 .research-list,
 .certification-list {
-  list-style: none;
-  padding: 0;
+  padding-left: 20px;
 }
 
 .research-list li,
 .certification-list li {
-  background: #f8fafc;
-  margin: 10px 0;
-  padding: 12px;
-  border-radius: 6px;
-  border: 1px solid #e5e7eb;
+  margin-bottom: 12px;
 }
 
-/* ==== Certifications ==== */
+/* =========================================================
+   CERTIFICATIONS
+========================================================= */
 .cert-grid {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 14px;
 }
 
 .cert-card {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 20px;
-  padding: 12px 0;
-  border-bottom: 1px solid #e5e7eb;
   line-height: 1.5;
 }
 
@@ -226,128 +229,92 @@ a:hover {
 }
 
 .cert-card a {
-  white-space: nowrap;
-  font-weight: 500;
+  margin-left: 8px;
+  font-size: 14px;
 }
 
-/* ==== Posters / figures ==== */
+/* =========================================================
+   POSTERS / FIGURES
+========================================================= */
 .poster-figure {
-  margin: 16px 0;
+  margin: 20px 0;
 }
 
 .poster-img {
   width: 100%;
-  max-width: 850px;
-  height: auto;
+  max-width: 680px;
+  border-radius: 8px;
   display: block;
-  margin: 40px auto;
-  border-radius: 12px;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
 
 .poster-caption {
-  text-align: center;
-  margin-top: 10px;
-  font-size: 0.95rem;
-  opacity: 0.85;
-}
-
-/* ==== Footer ==== */
-.footer {
-  text-align: center;
-  padding: 18px;
-  background: #ffffff;
-  color: #555;
-  margin-top: 30px;
+  margin-top: 8px;
   font-size: 14px;
-  border-top: 1px solid #e5e7eb;
+  color: #777;
 }
 
-/* ==== Responsive design ==== */
-@media (max-width: 900px) {
+/* =========================================================
+   FOOTER
+========================================================= */
+.footer {
+  margin-top: 40px;
+  font-size: 13px;
+  color: #888;
+}
+
+/* =========================================================
+   ANIMATION
+========================================================= */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+@media (max-width: 950px) {
+
   .container {
+    display: flex;
     flex-direction: column;
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
   }
 
   .sidebar {
     width: 100%;
     min-width: 100%;
-    height: auto;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: none;
-    border-right: none;
-    border-bottom: 1px solid #e5e7eb;
-    padding: 15px;
-  }
-
-  .profile-image {
-    width: 90px;
-    height: 90px;
-    margin: 0 0 10px 0;
-  }
-
-  .logos-container {
-    display: none;
-  }
-
-  .navbar {
-    width: 100%;
-    display: none;
-    flex-direction: column;
     text-align: center;
-    margin-top: 10px;
-  }
-
-  .navbar.active {
-    display: flex;
-  }
-
-  .nav-links a {
-    padding: 10px;
-    font-size: 16px;
-  }
-
-  .external-links {
-    margin-top: 10px;
-  }
-
-  .external-links a {
-    font-size: 18px;
-  }
-
-  .menu-toggle {
-    display: block;
-    cursor: pointer;
-    font-size: 22px;
-    color: #fff;
-    background: #0077b6;
-    padding: 8px 12px;
-    border-radius: 5px;
-    margin-top: 10px;
-    transition: background 0.3s ease;
-  }
-
-  .menu-toggle:hover {
-    background: #00b4d8;
+    margin-bottom: 40px;
   }
 
   .content {
-    margin-left: 0;
-    padding: 20px;
     width: 100%;
-    max-width: 100%;
   }
 
   .section {
-    margin-bottom: 25px;
-    padding: 20px;
+    max-width: 100%;
   }
 
-  .cert-card {
-    flex-direction: column;
-    gap: 4px;
+  .profile-image {
+    width: 170px;
+    height: 170px;
+  }
+
+  .logos-container {
+    justify-content: center;
+  }
+
+  .nav-links {
+    text-align: center;
   }
 }
