@@ -1,674 +1,521 @@
-<!DOCTYPE html>
-<html lang="en">
+/* =========================================================
+   RESET
+========================================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+/* =========================================================
+   BODY
+========================================================= */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f5f7fa;
+  color: #333;
+  line-height: 1.8;
+  font-size: 18px;
+}
 
-  <title>Razak Christophe Sabi Gninkou</title>
+/* =========================================================
+   LINKS
+========================================================= */
+a {
+  color: #0077b6;
+  text-decoration: none;
+}
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
+a:hover {
+  text-decoration: underline;
+}
 
-  <style>
+/* =========================================================
+   MAIN LAYOUT
+========================================================= */
+.container {
+  max-width: 1450px;
 
-    /* =========================================================
-       RESET
-    ========================================================= */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+  margin: 0 auto;
 
-    /* =========================================================
-       BODY
-    ========================================================= */
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: #f5f7fa;
-      color: #333;
-      line-height: 1.8;
-      font-size: 18px;
-    }
+  display: grid;
 
-    a {
-      color: #0077b6;
-      text-decoration: none;
-    }
+  grid-template-columns: 390px 1fr;
 
-    a:hover {
-      text-decoration: underline;
-    }
+  gap: 32px;
 
-    /* =========================================================
-       MAIN LAYOUT
-    ========================================================= */
-    .container {
-      max-width: 1450px;
-      margin: 0 auto;
+  min-height: 100vh;
 
-      display: grid;
-      grid-template-columns: 390px 1fr;
+  padding: 0 22px;
+}
 
-      gap: 32px;
+/* =========================================================
+   SIDEBAR
+========================================================= */
+.sidebar {
+  background: #ffffff;
 
-      min-height: 100vh;
+  height: 100vh;
 
-      padding: 0 22px;
-    }
+  position: sticky;
+  top: 0;
 
-    /* =========================================================
-       SIDEBAR
-    ========================================================= */
-    .sidebar {
-      background: #ffffff;
+  overflow-y: auto;
 
-      height: 100vh;
+  padding: 32px 28px;
 
-      position: sticky;
-      top: 0;
+  border-right: 1px solid #e5e7eb;
 
-      overflow-y: auto;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
 
-      padding: 32px 28px;
+/* =========================================================
+   PROFILE
+========================================================= */
+.profile-image {
+  width: 250px;
+  height: 250px;
 
-      border-right: 1px solid #e5e7eb;
+  border-radius: 50%;
 
-      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
-    }
+  object-fit: cover;
 
-    /* =========================================================
-       PROFILE
-    ========================================================= */
-    .profile-image {
-      width: 250px;
-      height: 250px;
+  display: block;
 
-      border-radius: 50%;
+  margin: 0 auto 24px;
 
-      object-fit: cover;
+  border: 3px solid #0077b6;
+}
 
-      display: block;
+.sidebar h2 {
+  text-align: center;
 
-      margin: 0 auto 24px;
+  font-size: 22px;
 
-      border: 3px solid #0077b6;
-    }
+  line-height: 1.35;
 
-    .sidebar h2 {
-      text-align: center;
+  color: #0d1b2a;
 
-      font-size: 22px;
+  margin-bottom: 22px;
+}
 
-      line-height: 1.35;
+.sidebar h3 {
+  text-align: center;
 
-      color: #0d1b2a;
+  font-size: 17px;
 
-      margin-bottom: 22px;
-    }
+  color: #222;
 
-    .sidebar h3 {
-      text-align: center;
+  margin-bottom: 18px;
+}
 
-      font-size: 17px;
+.sidebar p {
+  text-align: center;
 
-      color: #222;
+  margin-bottom: 8px;
+}
 
-      margin-bottom: 18px;
-    }
+/* =========================================================
+   CONTACT
+========================================================= */
+.contact-info {
+  text-align: center;
 
-    .sidebar p {
-      text-align: center;
+  font-size: 14px;
 
-      margin-bottom: 8px;
-    }
+  line-height: 1.7;
 
-    /* =========================================================
-       CONTACT
-    ========================================================= */
-    .contact-info {
-      text-align: center;
+  color: #555;
 
-      font-size: 14px;
+  margin: 22px 0;
+}
 
-      line-height: 1.7;
+/* =========================================================
+   LOGOS
+========================================================= */
+.logos-container {
+  display: flex;
 
-      color: #555;
+  justify-content: center;
+  align-items: center;
 
-      margin: 22px 0;
-    }
+  gap: 70px;
 
-    /* =========================================================
-       LOGOS
-    ========================================================= */
-    .logos-container {
-      display: flex;
+  margin: 22px 0 30px;
+}
 
-      justify-content: center;
-      align-items: center;
+.logo {
+  width: 70px;
+  height: auto;
+}
 
-      gap: 70px;
+/* =========================================================
+   MENU BUTTON MOBILE
+========================================================= */
+.menu-toggle {
+  display: none;
+}
 
-      margin: 22px 0 30px;
-    }
+/* =========================================================
+   NAVBAR
+========================================================= */
+.navbar {
+  width: 100%;
+}
 
-    .logo {
-      width: 70px;
-      height: auto;
-    }
+.nav-links {
+  list-style: none;
+}
 
-    /* =========================================================
-       MENU BUTTON MOBILE
-    ========================================================= */
-    .menu-toggle {
-      display: none;
-    }
+.nav-links li {
+  margin: 10px 0;
+}
 
-    /* =========================================================
-       NAVBAR
-    ========================================================= */
-    .navbar {
-      width: 100%;
-    }
+.nav-links a {
+  display: block;
 
-    .nav-links {
-      list-style: none;
-    }
+  padding: 13px 16px;
 
-    .nav-links li {
-      margin: 10px 0;
-    }
+  border-radius: 7px;
 
-    .nav-links a {
-      display: block;
+  color: #333;
 
-      padding: 13px 16px;
+  font-weight: 500;
 
-      border-radius: 7px;
+  transition: all 0.25s ease;
+}
 
-      color: #333;
+.nav-links a:hover {
+  background: #eef6fb;
 
-      font-weight: 500;
+  color: #0077b6;
 
-      transition: all 0.25s ease;
-    }
+  padding-left: 22px;
 
-    .nav-links a:hover {
-      background: #eef6fb;
+  text-decoration: none;
+}
 
-      color: #0077b6;
+.nav-links a.active {
+  background: #0077b6;
 
-      padding-left: 22px;
+  color: #ffffff;
 
-      text-decoration: none;
-    }
+  font-weight: 600;
 
-    .nav-links a.active {
-      background: #0077b6;
+  box-shadow: inset 4px 0 0 #0d1b2a;
+}
 
-      color: #ffffff;
+/* =========================================================
+   EXTERNAL LINKS
+========================================================= */
+.external-links {
+  margin-top: 30px;
 
-      font-weight: 600;
+  text-align: center;
+}
 
-      box-shadow: inset 4px 0 0 #0d1b2a;
-    }
+.external-links a {
+  font-size: 22px;
 
-    /* =========================================================
-       EXTERNAL LINKS
-    ========================================================= */
-    .external-links {
-      margin-top: 30px;
+  color: #333;
 
-      text-align: center;
-    }
+  margin: 0 12px;
 
-    .external-links a {
-      font-size: 22px;
+  transition: 0.3s;
+}
 
-      color: #333;
+.external-links a:hover {
+  color: #0077b6;
+}
 
-      margin: 0 12px;
+/* =========================================================
+   CONTENT
+========================================================= */
+.content {
+  width: 100%;
 
-      transition: 0.3s;
-    }
+  display: flex;
 
-    .external-links a:hover {
-      color: #0077b6;
-    }
+  justify-content: center;
 
-    /* =========================================================
-       CONTENT
-    ========================================================= */
-    .content {
-      width: 100%;
+  align-items: flex-start;
 
-      display: flex;
+  padding: 30px 0;
+}
 
-      justify-content: center;
+/* =========================================================
+   SECTIONS
+========================================================= */
+.section {
+  display: none;
 
-      align-items: flex-start;
+  width: 100%;
 
-      padding: 30px 0;
-    }
+  max-width: 950px;
 
-    /* =========================================================
-       SECTIONS
-    ========================================================= */
-    .section {
-      display: none;
+  background: #ffffff;
 
-      width: 100%;
+  padding: 42px;
 
-      max-width: 950px;
+  border-radius: 14px;
 
-      background: #ffffff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
 
-      padding: 42px;
+  animation: fadeIn 0.4s ease-in-out;
+}
 
-      border-radius: 14px;
+.section.active {
+  display: block;
+}
 
-      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+.section h2 {
+  color: #0d1b2a;
 
-      animation: fadeIn 0.4s ease-in-out;
-    }
+  border-bottom: 2px solid #0077b6;
 
-    .section.active {
-      display: block;
-    }
+  display: inline-block;
 
-    .section h2 {
-      color: #0d1b2a;
+  padding-bottom: 6px;
 
-      border-bottom: 2px solid #0077b6;
+  margin-bottom: 24px;
+}
 
-      display: inline-block;
+.section h3 {
+  margin-top: 20px;
+  margin-bottom: 12px;
+  color: #0d1b2a;
+}
 
-      padding-bottom: 6px;
+/* =========================================================
+   ANIMATION
+========================================================= */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
 
-      margin-bottom: 24px;
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-    /* =========================================================
-       ANIMATION
-    ========================================================= */
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(12px);
-      }
+/* =========================================================
+   LISTS
+========================================================= */
+ul {
+  padding-left: 24px;
+  margin-top: 12px;
+}
 
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
+li {
+  margin-bottom: 10px;
+}
 
-    /* =========================================================
-       CERTIFICATIONS
-    ========================================================= */
-    .cert-grid {
-      display: grid;
-      gap: 14px;
-    }
+/* =========================================================
+   PUBLICATIONS
+========================================================= */
+.pub-list {
+  margin-top: 18px;
+}
 
-    .cert-card {
-      display: flex;
+.pub-item {
+  background: #f8fafc;
 
-      justify-content: space-between;
+  padding: 18px;
 
-      align-items: flex-start;
+  border-radius: 10px;
 
-      gap: 20px;
+  border: 1px solid #e5e7eb;
 
-      padding: 14px 0;
+  margin-bottom: 18px;
+}
 
-      border-bottom: 1px solid #e5e7eb;
-    }
+.pub-citation {
+  line-height: 1.7;
+}
 
-    .cert-card strong {
-      color: #222;
-    }
+.pub-meta {
+  margin-top: 10px;
 
-    .cert-card a {
-      white-space: nowrap;
+  font-size: 15px;
 
-      font-weight: 500;
-    }
+  color: #666;
+}
 
-    /* =========================================================
-       FOOTER
-    ========================================================= */
-    .footer {
-      text-align: center;
+.separator {
+  margin: 0 8px;
+}
 
-      padding: 18px;
+/* =========================================================
+   CERTIFICATIONS
+========================================================= */
+.cert-grid {
+  display: grid;
 
-      margin-top: 30px;
+  gap: 14px;
+}
 
-      background: #ffffff;
+.cert-card {
+  display: flex;
 
-      color: #555;
+  justify-content: space-between;
 
-      font-size: 14px;
+  align-items: flex-start;
 
-      border-top: 1px solid #e5e7eb;
-    }
+  gap: 20px;
 
-    /* =========================================================
-       RESPONSIVE
-    ========================================================= */
-    @media (max-width: 900px) {
+  padding: 14px 0;
 
-      .container {
-        display: flex;
-        flex-direction: column;
+  border-bottom: 1px solid #e5e7eb;
+}
 
-        padding: 0;
+.cert-card strong {
+  color: #222;
+}
 
-        gap: 0;
-      }
+.cert-card a {
+  white-space: nowrap;
 
-      .sidebar {
-        width: 100%;
+  font-weight: 500;
+}
 
-        height: auto;
+/* =========================================================
+   TEACHING
+========================================================= */
+.entry-card {
+  background: #f8fafc;
 
-        position: relative;
+  border: 1px solid #e5e7eb;
 
-        border-right: none;
+  border-radius: 10px;
 
-        border-bottom: 1px solid #e5e7eb;
+  padding: 20px;
 
-        box-shadow: none;
-      }
+  margin-bottom: 18px;
+}
 
-      .profile-image {
-        width: 150px;
-        height: 150px;
-      }
+.entry-meta {
+  font-size: 15px;
 
-      .logos-container {
-        display: none;
-      }
+  color: #666;
 
-      .menu-toggle {
-        display: block;
+  margin-top: 6px;
+}
 
-        width: fit-content;
+.entry-audience {
+  font-weight: 500;
 
-        margin: 14px auto;
+  margin-top: 6px;
+}
 
-        padding: 8px 12px;
+.entry-description {
+  margin-top: 10px;
+}
 
-        background: #0077b6;
+/* =========================================================
+   FOOTER
+========================================================= */
+.footer {
+  text-align: center;
 
-        color: white;
+  padding: 18px;
 
-        border-radius: 6px;
+  margin-top: 30px;
 
-        cursor: pointer;
+  background: #ffffff;
 
-        font-size: 22px;
-      }
+  color: #555;
 
-      .navbar {
-        display: none;
+  font-size: 14px;
 
-        text-align: center;
-      }
+  border-top: 1px solid #e5e7eb;
+}
 
-      .navbar.active {
-        display: block;
-      }
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+@media (max-width: 900px) {
 
-      .content {
-        padding: 22px;
+  .container {
+    display: flex;
 
-        display: block;
-      }
+    flex-direction: column;
 
-      .section {
-        max-width: 100%;
+    padding: 0;
 
-        padding: 24px;
-      }
+    gap: 0;
+  }
 
-      .cert-card {
-        flex-direction: column;
+  .sidebar {
+    width: 100%;
 
-        gap: 6px;
-      }
-    }
+    height: auto;
 
-  </style>
-</head>
+    position: relative;
 
-<body>
+    border-right: none;
 
-  <div class="container">
+    border-bottom: 1px solid #e5e7eb;
 
-    <!-- =====================================================
-         SIDEBAR
-    ====================================================== -->
-    <aside class="sidebar">
+    box-shadow: none;
+  }
 
-      <img src="profile.jpg" alt="Profile" class="profile-image">
+  .profile-image {
+    width: 150px;
+    height: 150px;
+  }
 
-      <h2>
-        SABI GNINKOU Razak Christophe
-      </h2>
+  .logos-container {
+    display: none;
+  }
 
-      <h3>
-        PhD Candidate in Applied Mathematics
-      </h3>
+  .menu-toggle {
+    display: block;
 
-      <p>
-        Université Polytechnique Hauts-de-France (UPHF)
-      </p>
+    width: fit-content;
 
-      <p>
-        & École des Mines de Saint-Étienne (EMSE)
-      </p>
+    margin: 14px auto;
 
-      <div class="contact-info">
-        <p>
-          RazakChristophe.SabiGninkou@uphf.fr
-        </p>
+    padding: 8px 12px;
 
-        <p>
-          razsabigninchrist@gmail.com
-        </p>
-      </div>
+    background: #0077b6;
 
-      <div class="logos-container">
-        <img src="uphf.png" class="logo">
-        <img src="emse.png" class="logo">
-      </div>
+    color: white;
 
-      <div class="menu-toggle" id="menuToggle">
-        ☰ Menu
-      </div>
+    border-radius: 6px;
 
-      <nav class="navbar" id="navbar">
+    cursor: pointer;
 
-        <ul class="nav-links">
+    font-size: 22px;
+  }
 
-          <li>
-            <a href="#home" class="active">
-              Homepage
-            </a>
-          </li>
+  .navbar {
+    display: none;
 
-          <li>
-            <a href="#publications">
-              Publications
-            </a>
-          </li>
+    text-align: center;
+  }
 
-          <li>
-            <a href="#certifications">
-              Certifications
-            </a>
-          </li>
+  .navbar.active {
+    display: block;
+  }
 
-          <li>
-            <a href="#teaching">
-              Teaching
-            </a>
-          </li>
+  .content {
+    padding: 22px;
 
-          <li>
-            <a href="#toolboxes">
-              Toolboxes
-            </a>
-          </li>
+    display: block;
+  }
 
-        </ul>
+  .section {
+    max-width: 100%;
 
-      </nav>
+    padding: 24px;
+  }
 
-    </aside>
+  .cert-card {
+    flex-direction: column;
 
-    <!-- =====================================================
-         CONTENT
-    ====================================================== -->
-    <main class="content">
-
-      <!-- HOME -->
-      <section id="home" class="section active">
-
-        <h2>About Me</h2>
-
-        <p>
-          I am a <strong>PhD candidate in Applied Mathematics</strong>.
-        </p>
-
-      </section>
-
-      <!-- PUBLICATIONS -->
-      <section id="publications" class="section">
-
-        <h2>Research & Publications</h2>
-
-        <p>
-          Publications content here.
-        </p>
-
-      </section>
-
-      <!-- CERTIFICATIONS -->
-      <section id="certifications" class="section">
-
-        <h2>Certifications</h2>
-
-        <div class="cert-grid">
-
-          <div class="cert-card">
-            <div>
-              <strong>Improving Deep Neural Networks</strong><br>
-              DeepLearning.AI
-            </div>
-
-            <a href="#">Verify</a>
-          </div>
-
-        </div>
-
-      </section>
-
-      <!-- TEACHING -->
-      <section id="teaching" class="section">
-
-        <h2>Teaching</h2>
-
-        <p>
-          Teaching content here.
-        </p>
-
-      </section>
-
-      <!-- TOOLBOXES -->
-      <section id="toolboxes" class="section">
-
-        <h2>Toolboxes</h2>
-
-        <p>
-          Toolbox content here.
-        </p>
-
-      </section>
-
-    </main>
-
-  </div>
-
-  <!-- =====================================================
-       JAVASCRIPT
-  ====================================================== -->
-  <script>
-
-    /* =====================================================
-       MOBILE MENU
-    ====================================================== */
-    const menuToggle =
-      document.getElementById("menuToggle");
-
-    const navbar =
-      document.getElementById("navbar");
-
-    menuToggle.addEventListener("click", () => {
-      navbar.classList.toggle("active");
-    });
-
-    /* =====================================================
-       NAVIGATION BETWEEN SECTIONS
-    ====================================================== */
-    const links =
-      document.querySelectorAll(".nav-links a");
-
-    const sections =
-      document.querySelectorAll(".section");
-
-    links.forEach(link => {
-
-      link.addEventListener("click", function (e) {
-
-        e.preventDefault();
-
-        /* remove active */
-        links.forEach(l =>
-          l.classList.remove("active")
-        );
-
-        sections.forEach(s =>
-          s.classList.remove("active")
-        );
-
-        /* active link */
-        this.classList.add("active");
-
-        /* target */
-        const targetId =
-          this.getAttribute("href")
-            .replace("#", "");
-
-        const targetSection =
-          document.getElementById(targetId);
-
-        if (targetSection) {
-          targetSection.classList.add("active");
-        }
-
-      });
-
-    });
-
-  </script>
-
-</body>
-
-</html>
+    gap: 6px;
+  }
+}
